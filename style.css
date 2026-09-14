@@ -1,0 +1,120 @@
+/* BASE STYLES & VARIABLES */
+:root {
+    --color-bg: #0a0a0a;
+    --color-surface: #1a1a1a;
+    --color-text: #f5f5f5;
+    --color-text-muted: #a3a3a3;
+    --color-gold: #d4af37;
+    --color-gold-hover: #e5c158;
+    --font-sans: 'Inter', Arial, sans-serif;
+    --font-serif: 'Playfair Display', serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background-color: var(--color-bg); color: var(--color-text); font-family: var(--font-sans); line-height: 1.6; font-size: 15px; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; height: auto; display: block; }
+a { text-decoration: none; color: inherit; }
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.text-center { text-align: center; }
+.mt-4 { margin-top: 40px; }
+.mt-5 { margin-top: 50px; }
+.mb-5 { margin-bottom: 50px; }
+
+/* BILINGUAL TOGGLE LOGIC */
+body.lang-ms .en { display: none !important; }
+body.lang-en .ms { display: none !important; }
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4 { font-family: var(--font-serif); color: var(--color-gold); font-weight: 600; }
+.section-title { font-size: 2rem; margin-bottom: 2.5rem; }
+
+/* BUTTONS */
+.btn-primary { display: inline-block; background-color: var(--color-gold); color: #000; font-weight: 600; padding: 14px 28px; border-radius: 4px; text-transform: uppercase; letter-spacing: 1px; transition: background 0.3s; }
+.btn-primary:hover { background-color: var(--color-gold-hover); }
+.btn-secondary { display: block; width: 100%; border: 1px solid var(--color-gold); color: var(--color-gold); text-align: center; padding: 10px; border-radius: 4px; font-weight: 600; margin-top: 15px; transition: all 0.3s ease; }
+.btn-secondary:hover { background-color: var(--color-gold); color: #000; }
+.lang-btn { background: transparent; border: 1px solid var(--color-gold); color: var(--color-gold); padding: 5px 12px; border-radius: 4px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+.lang-btn:hover { background: var(--color-gold); color: #000; }
+
+/* HEADER */
+.site-header { background-color: #000000; border-bottom: 1px solid rgba(212, 175, 55, 0.2); position: sticky; top: 0; z-index: 100; padding: 15px 0; }
+.nav-container { display: flex; flex-direction: column; align-items: center; gap: 15px; }
+.header-logo { height: 40px; width: auto; object-fit: contain; }
+.main-nav { display: flex; gap: 15px; align-items: center; flex-wrap: wrap; justify-content: center; }
+.main-nav a { font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; color: var(--color-text-muted); transition: color 0.3s; }
+.main-nav a:hover { color: var(--color-gold); }
+
+/* HERO SECTION */
+.hero-section { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('images/cover-photo.jpg'); background-size: cover; background-position: center; padding: 100px 0; text-align: center; border-bottom: 1px solid rgba(212, 175, 55, 0.1); }
+.hero-title { font-size: 2rem; color: var(--color-text); margin-bottom: 30px; font-style: normal; } 
+
+/* HORIZONTAL SCROLL WRAPPER (SWIPE FOR > 3 ITEMS) */
+.horizontal-scroll-wrapper { width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 20px; display: flex; gap: 20px; }
+.horizontal-scroll-wrapper::-webkit-scrollbar { height: 6px; }
+.horizontal-scroll-wrapper::-webkit-scrollbar-thumb { background: var(--color-gold); border-radius: 4px; }
+.horizontal-item { flex: 0 0 auto; width: 280px; }
+
+/* PRODUCTS SECTION (HIERARCHY & GRID FOR <= 3 ITEMS) */
+.products-section { padding: 60px 0; background-color: var(--color-surface); }
+.collection-tier { margin-bottom: 60px; }
+.tier-title { font-size: 1.5rem; margin-bottom: 25px; border-bottom: 1px solid #333; padding-bottom: 10px; color: #fff; }
+
+/* V5.3 Ethnic Subtitle Styling */
+.ethnic-title { font-size: 1.25rem; margin: 15px 0 20px; color: var(--color-gold); font-style: italic; }
+
+.product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 25px; }
+.product-card { background-color: var(--color-bg); border: 1px solid rgba(212, 175, 55, 0.2); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; }
+.product-image { width: 100%; aspect-ratio: 1/1; object-fit: cover; background-color: #222; border-bottom: 1px solid rgba(212, 175, 55, 0.2); }
+.product-info { padding: 20px; text-align: center; display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;}
+.product-name { font-size: 1.3rem; margin-bottom: 8px; line-height: 1.2; }
+.product-detail { font-size: 0.85rem; color: var(--color-text-muted); margin-bottom: 5px; }
+.product-status { font-size: 0.8rem; color: var(--color-gold); font-style: italic; margin-top: 10px; margin-bottom: 10px; }
+
+/* CARA ORDER SECTION */
+.order-section { padding: 60px 0; }
+.step-card { background-color: #000000; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid rgba(212, 175, 55, 0.2); border-bottom: 4px solid var(--color-gold); }
+.step-icon { width: 60px; height: 60px; object-fit: contain; margin: 0 auto 15px; border-radius: 5px; }
+.step-card p { font-size: 0.9rem; color: var(--color-text-muted); }
+.step-card strong { color: var(--color-gold); font-size: 1rem; }
+
+/* SHIPPING METHODS */
+.shipping-horizontal { border-top: 1px solid #333; padding-top: 30px; margin-top: 40px; }
+.shipping-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+.shipping-card { background-color: #000000; padding: 20px; border-radius: 8px; text-align: center; border: 1px solid rgba(212, 175, 55, 0.2); border-bottom: 4px solid var(--color-gold); }
+
+/* KENAPA PILIH KOLEKSI INI */
+.why-choose-section { padding: 60px 0; background-color: var(--color-surface); }
+.reasons-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+.reason-card { background-color: #000000; padding: 25px; border-radius: 8px; text-align: center; border: 1px solid rgba(212, 175, 55, 0.2); border-bottom: 4px solid var(--color-gold); }
+.reason-icon { width: 70px; height: 70px; object-fit: contain; margin: 0 auto 15px; }
+.reason-card h4 { margin-bottom: 10px; font-size: 1.1rem; color: var(--color-gold); }
+.reason-card p { font-size: 0.90rem; color: var(--color-text-muted); }
+
+/* TENTANG KAMI */
+.about-section { padding: 60px 0; border-bottom: 1px solid rgba(212, 175, 55, 0.1); }
+.about-brand-grid, .about-founder-grid { display: grid; grid-template-columns: 1fr; gap: 20px; justify-items: center; }
+.about-image img { border-radius: 12px; max-width: 250px; margin: 0 auto; border: 3px solid var(--color-gold); }
+.about-text p { margin-bottom: 15px; color: var(--color-text-muted); }
+
+/* HUBUNGI KAMI (SOCIALS) */
+.social-links-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; max-width: 500px; margin: 0 auto; }
+.social-btn { display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #000000; padding: 20px; border-radius: 8px; border: 1px solid var(--color-gold); transition: all 0.3s; }
+.social-btn:hover { background-color: var(--color-surface); transform: translateY(-3px); }
+.social-btn img { width: 40px; height: 40px; margin-bottom: 10px; object-fit: contain; }
+.social-btn span { font-size: 0.9rem; font-weight: 600; color: var(--color-text); }
+
+/* FOOTER */
+.site-footer { padding: 30px 0; background-color: #000; border-top: 1px solid rgba(212, 175, 55, 0.3); }
+
+/* RESPONSIVE DESKTOP */
+@media (min-width: 768px) {
+    .hero-title { font-size: 3rem; } 
+    .about-brand-grid, .about-founder-grid { grid-template-columns: 1fr; }
+}
+@media (min-width: 1024px) {
+    .nav-container { flex-direction: row; justify-content: space-between; }
+    .horizontal-scroll-wrapper { justify-content: center; flex-wrap: wrap; overflow-x: visible; }
+    .reasons-grid { grid-template-columns: repeat(4, 1fr); }
+    .social-links-grid { grid-template-columns: repeat(4, 1fr); max-width: 800px; }
+    .shipping-grid { grid-template-columns: repeat(2, 1fr); max-width: 700px; margin: 0 auto; }
+}
