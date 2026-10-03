@@ -45,15 +45,14 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ---------- 4. Active nav link ---------- */
     const navLinks = [...nav.querySelectorAll('a[href^="#"]')];
     const sections = navLinks.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
-    if ('IntersectionObserver' in window) {
-        const spy = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
-                navLinks.forEach(a => a.classList.toggle('is-active', a.getAttribute('href') === '#' + entry.target.id));
-            });
-        }, { rootMargin: '-45% 0px -50% 0px' });
-        sections.forEach(s => spy.observe(s));
-    }
+    const updateActive = () => {
+        const mid = window.innerHeight * 0.45;
+        let current = sections[0];
+        sections.forEach(s => { if (s.getBoundingClientRect().top <= mid) current = s; });
+        navLinks.forEach(a => a.classList.toggle('is-active', current && a.getAttribute('href') === '#' + current.id));
+    };
+    updateActive();
+    window.addEventListener('scroll', updateActive, { passive: true });
 
     /* ---------- 5. Collection filter ---------- */
     const chips = document.querySelectorAll('.chip');
@@ -83,7 +82,23 @@ document.addEventListener('DOMContentLoaded', () => {
             if (show) card.classList.add('is-in');
         });
         grid.scrollTo({ left: 0, behavior: 'smooth' });
+
+        // Bawa pengguna ke atas senarai produk bila filter ditukar (menu filter kekal melekat)
+        if (filterBar && grid.getBoundingClientRect().top < filterBar.offsetHeight + header.offsetHeight) {
+            const y = grid.getBoundingClientRect().top + window.scrollY - filterBar.offsetHeight - header.offsetHeight - 12;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+        }
     }));
+
+    /* ---------- 5b. Sticky filter bar: shadow bila melekat ---------- */
+    const filterBar = document.querySelector('.filter-bar');
+    const onFilterStick = () => {
+        if (!filterBar) return;
+        const top = parseFloat(getComputedStyle(filterBar).top) || 0;
+        filterBar.classList.toggle('is-stuck', filterBar.getBoundingClientRect().top <= top + 1 && grid.getBoundingClientRect().bottom > top + filterBar.offsetHeight);
+    };
+    onFilterStick();
+    window.addEventListener('scroll', onFilterStick, { passive: true });
 
     /* ---------- 6. Reveal on scroll ---------- */
     const reveals = document.querySelectorAll('.reveal');
