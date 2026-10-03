@@ -4,821 +4,876 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CITRALOKA - Karya Tradisi, Sentuhan Masa Kini</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="CITRALOKA - jenama kraftangan artisan tempatan dari Sabah. Beg tangan anyaman buatan tangan yang diinspirasikan daripada motif tradisional dan warisan budaya Sabah.">
+    <meta name="theme-color" content="#0b0907">
+    <meta property="og:title" content="CITRALOKA - Karya Tradisi, Sentuhan Masa Kini">
+    <meta property="og:description" content="Beg tangan anyaman buatan tangan dengan motif tradisional etnik Sabah.">
+    <meta property="og:image" content="images/cover-photo.jpg">
+    <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="lang-ms">
 
-    <!-- NAVIGATION -->
-    <header class="site-header">
+    <a class="skip-link" href="#koleksi"><span class="ms">Terus ke koleksi</span><span class="en">Skip to collection</span></a>
+
+    <!-- ================= NAVIGATION ================= -->
+    <header class="site-header" id="siteHeader">
         <div class="container nav-container">
-            <a href="#" class="logo-link">
+            <a href="#hero" class="logo-link" aria-label="CITRALOKA - Laman utama">
                 <img src="images/title.jpg" alt="CITRALOKA" class="header-logo">
             </a>
-            <nav class="main-nav">
+
+            <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
+                <a href="#hero" class="is-active"><span class="ms">Utama</span><span class="en">Home</span></a>
                 <a href="#koleksi"><span class="ms">Koleksi</span><span class="en">Collection</span></a>
+                <a href="#keistimewaan"><span class="ms">Keistimewaan</span><span class="en">Why Us</span></a>
                 <a href="#cara-order"><span class="ms">Cara Order</span><span class="en">How to Order</span></a>
                 <a href="#tentang"><span class="ms">Tentang Kami</span><span class="en">About Us</span></a>
-                <button id="langToggle" class="lang-btn">ENG</button>
+                <a href="#hubungi"><span class="ms">Hubungi</span><span class="en">Contact</span></a>
+                <a href="https://wa.me/60192595039?text=Hai,%20saya%20ingin%20bertanya%20tentang%20koleksi%20CITRALOKA" class="btn-outline nav-cta-mobile" target="_blank" rel="noopener noreferrer">
+                    <span class="ms">Tanya Sekarang</span><span class="en">Inquire Now</span>
+                </a>
             </nav>
+
+            <div class="nav-actions">
+                <button id="langToggle" class="lang-btn" aria-label="Tukar bahasa / Switch language">ENG</button>
+                <a href="https://wa.me/60192595039?text=Hai,%20saya%20ingin%20bertanya%20tentang%20koleksi%20CITRALOKA" class="btn-outline nav-cta" target="_blank" rel="noopener noreferrer">
+                    <span class="ms">Tanya Sekarang</span><span class="en">Inquire Now</span>
+                </a>
+                <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false" aria-controls="mainNav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </header>
 
     <main>
-        <!-- 1. HERO SECTION -->
+        <!-- ================= 1. HERO ================= -->
         <section id="hero" class="hero-section">
+            <div class="hero-bg" aria-hidden="true"></div>
             <div class="container hero-content">
-                <h1 class="hero-title">
-                    <span class="ms">Karya Tradisi, Sentuhan Masa Kini</span>
-                    <span class="en">Traditional Masterpiece, Modern Touch</span>
+                <p class="eyebrow reveal">
+                    <span class="ms">Kraf Anyaman Buatan Tangan &middot; Kota Marudu, Sabah</span>
+                    <span class="en">Handwoven Craft &middot; Kota Marudu, Sabah</span>
+                </p>
+                <h1 class="hero-title reveal">
+                    <span class="ms">Karya Tradisi,<br><em class="gold-text">Sentuhan Masa Kini.</em></span>
+                    <span class="en">Traditional Masterpiece,<br><em class="gold-text">Modern Touch.</em></span>
                 </h1>
-                <a href="https://wa.me/60192595039?text=Hai,%20saya%20ingin%20bertanya%20tentang%20koleksi%20CITRALOKA" class="btn-primary" target="_blank" rel="noopener noreferrer">
-                    <span class="ms">WhatsApp / Tanya Sekarang</span>
-                    <span class="en">WhatsApp / Inquire Now</span>
-                </a>
+                <p class="hero-lead reveal">
+                    <span class="ms">Beg tangan anyaman moden buatan tangan, diinspirasikan daripada motif tradisional dan warisan budaya Sabah.</span>
+                    <span class="en">Modern handwoven handbags, inspired by the traditional motifs and cultural heritage of Sabah.</span>
+                </p>
+                <div class="hero-actions reveal">
+                    <a href="#koleksi" class="btn-primary">
+                        <span class="ms">Lihat Koleksi</span><span class="en">Explore Collection</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
+                    <a href="https://wa.me/60192595039?text=Hai,%20saya%20ingin%20bertanya%20tentang%20koleksi%20CITRALOKA" class="btn-outline" target="_blank" rel="noopener noreferrer">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg><span class="ms">WhatsApp / Tanya Sekarang</span><span class="en">WhatsApp / Inquire Now</span>
+                    </a>
+                </div>
+
+                <dl class="hero-stats reveal">
+                    <div class="stat">
+                        <dt><span class="ms">Motif Etnik Sabah</span><span class="en">Sabah Ethnic Motifs</span></dt>
+                        <dd>4</dd>
+                    </div>
+                    <div class="stat">
+                        <dt><span class="ms">Rekaan Dalam Koleksi</span><span class="en">Designs in Collection</span></dt>
+                        <dd data-product-count>28</dd>
+                    </div>
+                    <div class="stat">
+                        <dt><span class="ms">Buatan Tangan</span><span class="en">Handmade</span></dt>
+                        <dd>100%</dd>
+                    </div>
+                </dl>
             </div>
         </section>
 
-        <!-- 2. KOLEKSI KAMI -->
-        <section id="koleksi" class="products-section">
+        <!-- ================= 2. KEISTIMEWAAN (KENAPA PILIH) ================= -->
+        <section id="keistimewaan" class="features-section weave-bg">
             <div class="container">
-                <h2 class="section-title text-center">
-                    <span class="ms">Koleksi Kami</span>
-                    <span class="en">Our Collections</span>
-                </h2>
-                
-                <!-- ==============================================
-                     A) KOLEKSI BEG TANGAN (Gabungan Standard & Mini)
-                     ============================================== -->
-                <div class="collection-tier">
-                    <h3 class="tier-title text-center"><span class="ms">Koleksi Beg Tangan</span><span class="en">Handbag Collection</span></h3>
-                    
-                   <!-- Subtajuk: KOLEKSI RUNGUS -->
-                    <h4 class="ethnic-title text-center mt-5"><span class="ms"> Koleksi Rungus </span><span class="en"> Rungus Collection </span></h4>
-                    
-                    <div class="horizontal-scroll-wrapper">
-                        
-                        <!-- Item 1: Randavi (LIMITED EDITION) -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/randavi.png" alt="Randavi (LIMITED EDITION)" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Randavi <br> <span style="font-size: 0.85rem; font-weight: normal;">(LIMITED EDITION)</span></h4>
-
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS02</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Hitam</span><span class="en">Black</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Randavi%20(LIMITED%20EDITION)%20-%20RGS02?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 2: Sumuni 1 (Standard) -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/sumuni-1.jpg" alt="Sumuni 1 (Standard)" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Sumuni (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS01</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Hitam</span><span class="en">Black</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS01?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 3: Sumuni 2 (Standard) -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/sumuni-2.jpg" alt="Sumuni (Standard)" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Sumuni (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS06</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Hitam</span><span class="en">Black</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS06?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 4: Sumuni 3 (Standard) -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/sumuni-3.jpg" alt="Sumuni 3 (Standard)" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Sumuni (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS02</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Light Pink</span><span class="en">Light Pink</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS02?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 5: Sumuni 4 (Standard) -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/sumuni-4.jpg" alt="Sumuni 4 (Standard)" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Sumuni (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS02</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Lilac</span><span class="en">Lilac</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS02?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 6: Sumuni 5 (Standard) -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/sumuni-5.png" alt="Sumuni 5 (Standard)" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Sumuni (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS03</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Hitam</span><span class="en">Black</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS03?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 7: Sumuni 6 (Standard) -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/sumuni-6.jpg" alt="Sumuni 6 (Standard)" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Sumuni (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS05</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Hitam</span><span class="en">Black</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS05?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 8: Sumuni 7 (Standard) -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/sumuni-7.png" alt="Sumuni 7 (Standard)" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Sumuni (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS02</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Hitam</span><span class="en">Black</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS02?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 9: Sumuni 8 (Standard) -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/sumuni-8.jpg" alt="Sumuni 8 (Standard)" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Sumuni (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS07</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Purple</span><span class="en">Purple</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS07?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 10: Nginolitan (Standard) - RGS01 Hitam -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/nginolitan-1.png" alt="Nginolitan (Standard)" class="product-image">
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Nginolitan (Standard)</h4>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS01</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Hitam</span><span class="en">Black</span></p>
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20(Standard)%20-%20RGS01?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 11: Nginolitan (Standard) - RGS03 Hitam -->
-                   <!--     <article class="product-card horizontal-item">
-                            <img src="images/nginolitan-4.png" alt="Nginolitan (Standard)" class="product-image">
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Nginolitan (Standard)</h4>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS03</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Hitam</span><span class="en">Black</span></p>
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20(Standard)%20-%20RGS03?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article> -->
-                    
-                        <!-- Item 12: Nginolitan (Standard) - RGS02 Putih -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/nginolitan-3.jpg" alt="Nginolitan (Standard)" class="product-image">
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Nginolitan (Standard)</h4>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS02</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Putih</span><span class="en">White</span></p>
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20(Standard)%20-%20RGS02?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                    
-                        <!-- Item 13: Nginolitan (Standard) - RGS01 Putih -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/nginolitan-2.jpg" alt="Nginolitan (Standard)" class="product-image">
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Nginolitan (Standard)</h4>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS01</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Putih</span><span class="en">White</span></p>
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20(Standard)%20-%20RGS01?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        
-                        <!-- Item 3: Nginolitan (Standard) - RGS02 Putih -->
-                     <!--   <article class="product-card horizontal-item">
-                            <img src="images/nginolitan-5.jpg" alt="Nginolitan (Standard)" class="product-image">
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Nginolitan (Standard)</h4>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS02</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Putih</span><span class="en">White</span></p>
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20(Standard)%20-%20RGS02?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article> -->
-                        
-                        <!-- Item 4: Nginolitan (mini) - RGS01 Putih -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/nginolitan-7.jpg" alt="Nginolitan (Mini)" class="product-image">
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Nginolitan (Mini)</h4>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS01</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:19cm x L:7cm x T:19cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Putih</span><span class="en">White</span></p>
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20(Mini)%20-%20RGS01?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 16: Nginolitan (Standard) - RGS05 Aprikot -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/nginolitan-6.jpg" alt="Nginolitan (Standard)" class="product-image">
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Nginolitan (Standard)</h4>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS05</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Aprikot</span><span class="en">Apricot</span></p>
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20(Standard)%20-%20RGS05?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 17: Nginolitan (Mini) - RGS01 Aprikot -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/nginolitan-8.jpg" alt="Nginolitan (Mini)" class="product-image">
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Nginolitan (Mini)</h4>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS01</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:19cm x L:7cm x T:19cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Aprikot</span><span class="en">Apricot</span></p>
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20(Mini)%20-%20RGS01?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-
-                        <!-- Item Baru: Nginolitan Beg (Standard) - RGS04 Coffee -->
-                        <article class="product-card horizontal-item">
-                            <!-- GAMBAR PRODUK -->
-                            <img src="images/nginolitan-8.png" alt="Nginolitan Beg (Standard)" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Nginolitan Beg (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS04</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Coffee</span><span class="en">Coffee</span></p>
-                                
-                                <!-- BUTANG WHATSAPP -->
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20Beg%20(Standard)%20-%20RGS04?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                    </div>
-                                       <!-- Subtajuk: BAJAU SAMAH (≤3 Item = GRID) -->
-                    <h4 class="ethnic-title text-center mt-5"><span class="ms"> Koleksi Bajau Samah </span><span class="en"> Bajau Samah Collection </span></h4>
-                    
-                    <div class="horizontal-scroll-wrapper">
-                        
-                        <!-- Item 1: Badu Sipak Beg (Standard) -->
-                        <article class="product-card horizontal-item">
-                            <!-- PASTIKAN NAMA FAIL GAMBAR BETUL (Contoh: badu-sipak.png) -->
-                            <img src="images/badu-sipak.png" alt="Badu Sipak (Standard)" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Badu Sipak (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Bajau Samah</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> BJS01</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Hitam</span><span class="en">Black</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Badu%20Sipak%20(Standard)%20-%20BJS01?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 2: Olos Beragkit Beg (Standard) -->
-                        <article class="product-card horizontal-item">
-                            <!-- PASTIKAN NAMA FAIL GAMBAR BETUL (Contoh: olos-beragkit.jpg) -->
-                            <img src="images/olos-1.jpg" alt="Olos Berangkit (Standard)" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Olos Berangkit (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Bajau Samah</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> BJS02</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Kuning Mustard</span><span class="en">Mustard Yellow</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Olos%20Beragkit%20(Standard)%20-%20BJS02?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-
-                                        
-                    </div>
-
-                    <!-- Subtajuk: KOLEKSI KADAZAN DUSUN -->
-                    <h4 class="ethnic-title text-center mt-5"><span class="ms"> Koleksi Kadazan Dusun </span><span class="en"> Kadazan Dusun Collection </span></h4>
-                    
-                    <div class="horizontal-scroll-wrapper">
-                        
-                        <!-- Item 1: Sinipak (Standard) - DT01 -->
-                        <article class="product-card horizontal-item">
-                            <!-- TUKAR NAMA FAIL GAMBAR -->
-                            <img src="images/sinipak-1.jpg" alt="Sinipak (Standard)" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Sinipak (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Dusun Tindal</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> DT01</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Hitam</span><span class="en">Black</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sinipak%20(Standard)%20-%20DT01?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                        
-                        <!-- Item 2: Sinipak (Standard) - DT02 -->
-                        <article class="product-card horizontal-item">
-                            <!-- TUKAR NAMA FAIL GAMBAR -->
-                            <img src="images/sinipak-2.jpg" alt="Sinipak (Standard)" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Sinipak (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Dusun Tindal</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> DT02</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Hitam</span><span class="en">Black</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sinipak%20(Standard)%20-%20DT02?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-
-                    
-                        <!-- Item 4: Sinuangga Beg (Standard) - KDZ01 -->
-                        <article class="product-card horizontal-item">
-                            <!-- TUKAR NAMA FAIL GAMBAR -->
-                            <img src="images/sinuangga-1.jpg" alt="Sinuangga (Standard)" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Sinuangga (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Kadazan</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> KDZ01</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Hitam</span><span class="en">Black</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sinuangga%20(Standard)%20-%20KDZ01?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 5: Sinuangga Beg (Standard) - KDZ02 -->
-                        <article class="product-card horizontal-item">
-                            <!-- TUKAR NAMA FAIL GAMBAR -->
-                            <img src="images/sinuangga-2.jpg" alt="Sinuangga (Standard)" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Sinuangga (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Kadazan</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> KDZ02</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Hitam</span><span class="en">Black</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sinuangga%20(Standard)%20-%20KDZ02?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 6: Sukob Beg (Standard) -->
-                        <article class="product-card horizontal-item">
-                            <!-- TUKAR NAMA FAIL GAMBAR -->
-                            <img src="images/sukob-beg.jpg" alt="Sukob (Standard)" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Sukob (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Dusun Lotud</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> DL01</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Hitam</span><span class="en">Black</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sukob%20(Standard)%20-%20DL01?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-
-                    </div>                      
-
-                    <!-- Subtajuk: KEDAYAN (≤3 Item = GRID) -->
-                    <h4 class="ethnic-title text-center mt-5"><span class="ms"> Koleksi Kedayan </span><span class="en"> Kedayan Collection </span></h4>
-                    
-                    <div class="horizontal-scroll-wrapper">
-                        
-                        <!-- Item 1: Kubamban (Standard) -->
-                        <article class="product-card horizontal-item">
-                            <!-- PASTIKAN NAMA FAIL GAMBAR BETUL (Contoh: kubamban.jpg) -->
-                            <img src="images/kubamban.png" alt="Kubamban" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Kubamban (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Kedayan</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> KDN01</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Hitam</span><span class="en">Black</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Kubamban%20(Standard)%20-%20KDN01?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 2: Kedayan (Standard) -->
-                        <article class="product-card horizontal-item">
-                            <!-- PASTIKAN NAMA FAIL GAMBAR BETUL (Contoh: kedayan.jpg) -->
-                            <img src="images/kedayan.jpg" alt="Kubamban" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Kubamban (Standard)</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Kubamban</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> KDN02</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:22cm x L:9cm x T:22cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Hitam</span><span class="en">Black</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Kubamban%20(Standard)%20-%20KDN02?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-
+                <div class="section-head center">
+                    <p class="eyebrow"><span class="ms">Warisan Dalam Setiap Anyaman</span><span class="en">Heritage in Every Weave</span></p>
+                    <h2 class="section-title ornament">
+                        <span class="ms">Kenapa Pilih Produk Ini</span>
+                        <span class="en">Why Choose Our Products</span>
+                    </h2>
                 </div>
 
-                <!-- ==============================================
-                     B) KOLEKSI WRISTLET POUCH 
-                     ============================================== -->
-               <!-- Subtajuk: KOLEKSI WRISTLET POUCH -->
-                    <h4 class="ethnic-title text-center mt-5"><span class="ms"> Koleksi Wristlet Pouch </span><span class="en"> Wristlet Pouch Collection </span></h4>
-                    
-                    <div class="horizontal-scroll-wrapper">
-                        
-                        <!-- Item 1: Orikos 1 -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/orikos-1.jpg" alt="Orikos" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Orikos</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS02</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:16cm x L:7cm x T:16cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Hitam</span><span class="en">Black</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Orikos%20(Wristlet%20Pouch)%20-%20RGS02?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 2: Orikos 2 -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/orikos-2.jpg" alt="Orikos" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Orikos</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS02</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:16cm x L:7cm x T:16cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Light Pink</span><span class="en">Light Pink</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Orikos%20(Wristlet%20Pouch)%20-%20RGS02?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                        <!-- Item 3: Orikos 3 -->
-                        <article class="product-card horizontal-item">
-                            <img src="images/orikos-3.jpg" alt="Orikos" class="product-image">
-                            
-                            <div class="product-info" style="border: 1px solid #d4af37; padding: 15px; border-radius: 8px; text-align: center; margin: 10px;">
-                                <h4 class="product-name" style="margin-bottom: 15px;">Orikos</h4>
-                                
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Motif</span><span class="en">Motif</span>:</strong> Rungus</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Kod Corak</span><span class="en">Pattern Code</span>:</strong> RGS02</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Saiz</span><span class="en">Size</span>:</strong> P:16cm x L:7cm x T:16cm</p>
-                                <p class="product-detail" style="font-size: 0.9rem;"><strong><span class="ms">Warna</span><span class="en">Color</span>:</strong> <span class="ms">Aprikot</span><span class="en">Apricot</span></p>
-                                
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Orikos%20(Wristlet%20Pouch)%20-%20RGS02?" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="font-size: 1rem; font-weight: bold; border: 2px solid #d4af37; text-align: center; display: block; margin-top: 15px; padding: 10px;">
-                                    <span class="ms">Tanya Harga di Whatsapp</span><span class="en">Ask Price on Whatsapp</span>
-                                </a>
-                            </div>
-                        </article>
-                    
-                    </div>
-                        <!--
-                        <article class="product-card horizontal-item">
-                            <img src="images/orikos-pouch-1.jpg" alt="Orikos 1" class="product-image">
-                            <div class="product-info">
-                                <h4 class="product-name">Orikos 1</h4>
-                                <p class="product-detail">Motif: Rungus</p>
-                                <p class="product-detail"><span class="ms">Saiz: T:16.5cm P:17cm L:6.5cm | Warna: Hitam</span><span class="en">Size: H:16.5cm L:17cm W:6.5cm | Color: Black</span></p>
-                                <p class="product-status">Order available / Custom booking</p>
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Orikos%20(Pouch)%20-%20RGS02?" class="btn-secondary" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-                            </div>
-                        </article>
-                        -->
-                    </div>
-
-                    <!-- Subtajuk: BAJAU SAMAH (≤3 Item = GRID) -->
-                    <!--
-                    <h4 class="ethnic-title text-center mt-5"><span class="ms"> Koleksi Bajau Samah </span><span class="en"> Bajau Samah Collection </span></h4>
-                    <div class="product-grid" style="justify-content: center; display: flex;">
-                        <!--
-                        <article class="product-card" style="max-width: 320px; width: 100%;">
-                            <img src="images/orikos-pouch-2.jpg" alt="Orikos 2" class="product-image">
-                            <div class="product-info">
-                                <h4 class="product-name">Orikos 2</h4>
-                                <p class="product-detail">Motif: Bajau Samah</p>
-                                <p class="product-detail"><span class="ms">Saiz: T:16.5cm P:17cm L:6.5cm | Warna: Hitam</span><span class="en">Size: H:16.5cm L:17cm W:6.5cm | Color: Black</span></p>
-                                <p class="product-status">Order available / Custom booking</p>
-                                <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Orikos%20(Pouch)%20-%20RGS01?" class="btn-secondary" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-                            </div>
-                        </article>                         
-                    </div>
-                    -->
-                </div>
-                
-            </div>
-        </section>
-
-        <!-- 3. CARA TEMPAHAN -->
-        <section id="cara-order" class="order-section">
-            <div class="container">
-                <h2 class="section-title text-center">
-                    <span class="ms">Cara Tempahan</span>
-                    <span class="en">How to Order</span>
-                </h2>
-                
-                <div class="horizontal-scroll-wrapper">
-                    <div class="step-card horizontal-item">
-                        <img src="images/icon-1.jpg" alt="Pilih Produk" class="step-icon">
-                        <p><strong><span class="ms">1. Pilih Produk</span><span class="en">1. Select Product</span></strong><br>
-                        <span class="ms">Pilih produk dan tangkap layar (screenshot).</span>
-                        <span class="en">Choose your product and take a screenshot.</span></p>
-                    </div>
-                    <div class="step-card horizontal-item">
-                        <img src="images/icon-2.jpg" alt="Hubungi Kami" class="step-icon">
-                        <p><strong><span class="ms">2. Hubungi Kami</span><span class="en">2. Contact Us</span></strong><br>
-                        <span class="ms">Hantar gambar produk/screenshot melalui WhatsApp.</span>
-                        <span class="en">Send the screenshot to us via WhatsApp.</span></p>
-                    </div>
-                    <div class="step-card horizontal-item">
-                        <img src="images/icon-3.jpg" alt="Semakan Stok" class="step-icon">
-                        <p><strong><span class="ms">3. Semakan Stok</span><span class="en">3. Stock Check</span></strong><br>
-                        <span class="ms">Kami akan membuat semakan ketersediaan produk.</span>
-                        <span class="en">We will check the product availability for you.</span></p>
-                    </div>
-                    <div class="step-card horizontal-item">
-                        <img src="images/icon-4.jpg" alt="Pembayaran" class="step-icon">
-                        <p><strong><span class="ms">4. Pembayaran</span><span class="en">4. Payment</span></strong><br>
-                        <span class="ms">Bayaran atas talian melalui Kod QR. Hantar resit.</span>
-                        <span class="en">Online payment via QR code. Send the receipt.</span></p>
-                    </div>
-                </div>
-
-                <!-- KAEDAH PENGHANTARAN -->
-                <div class="shipping-horizontal">
-                    <h3 class="text-center" style="margin-bottom: 25px;">
-                        <span class="ms">Kaedah Penghantaran</span>
-                        <span class="en">Shipping Methods</span>
-                    </h3>
-                    <div class="shipping-grid">
-                        <div class="shipping-card">
-                            <img src="images/icon-6.jpg" alt="COD" class="step-icon">
-                            <p><strong><span class="ms">COD / Self Pick-up</span><span class="en">COD / Self Pick-up</span></strong><br>
-                            <span class="ms">Kota Marudu dan Pitas sahaja.</span>
-                            <span class="en">Kota Marudu and Pitas only.</span></p>
-                        </div>
-                        <div class="shipping-card">
-                            <img src="images/icon-7.jpg" alt="Pos" class="step-icon">
-                            <p><strong><span class="ms">Pos</span><span class="en">Postage</span></strong><br>
-                            <span class="ms">Ke seluruh negara.</span>
-                            <span class="en">Nationwide delivery.</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 4. KENAPA PILIH PRODUK INI -->
-        <section class="why-choose-section">
-            <div class="container">
-                <h2 class="section-title text-center">
-                    <span class="ms">Kenapa Pilih Produk Ini</span>
-                    <span class="en">Why Choose Our Products</span>
-                </h2>
-                <div class="reasons-grid">
-                    <div class="reason-card">
-                        <img src="images/icon-hand.jpg" alt="Buatan Tangan" class="reason-icon">
-                        <h4><span class="ms">Buatan Tangan</span><span class="en">Handmade</span></h4>
+                <div class="features-grid">
+                    <div class="feature-card reveal">
+                        <div class="icon-frame"><img src="images/icon-hand.jpg" alt="" loading="lazy"></div>
+                        <h3><span class="ms">Buatan Tangan</span><span class="en">Handmade</span></h3>
                         <p><span class="ms">Setiap produk dihasilkan dengan penuh ketelitian dan sentuhan tangan yang menjadikannya istimewa.</span><span class="en">Every product is meticulously handcrafted with a unique personal touch.</span></p>
                     </div>
-                    <div class="reason-card">
-                        <img src="images/icon-material.jpg" alt="Kualiti" class="reason-icon">
-                        <h4><span class="ms">Kualiti & Ketahanan Terjamin</span><span class="en">Assured Quality & Durability</span></h4>
+                    <div class="feature-card reveal">
+                        <div class="icon-frame"><img src="images/icon-material.jpg" alt="" loading="lazy"></div>
+                        <h3><span class="ms">Kualiti &amp; Ketahanan Terjamin</span><span class="en">Assured Quality &amp; Durability</span></h3>
                         <p><span class="ms">Kami menggunakan bahan berkualiti tinggi bagi memastikan setiap produk bermutu tinggi.</span><span class="en">We use premium materials to ensure every product is of the highest quality.</span></p>
                     </div>
-                    <div class="reason-card">
-                        <img src="images/icon-sabah.jpg" alt="Tradisional Moden" class="reason-icon">
-                        <h4><span class="ms">Gabungan Tradisional & Sentuhan Moden</span><span class="en">Traditional Heritage & Modern Touch</span></h4>
+                    <div class="feature-card reveal">
+                        <div class="icon-frame"><img src="images/icon-sabah.jpg" alt="" loading="lazy"></div>
+                        <h3><span class="ms">Gabungan Tradisional &amp; Sentuhan Moden</span><span class="en">Traditional Heritage &amp; Modern Touch</span></h3>
                         <p><span class="ms">Kami mengekalkan keaslian keindahan warisan tradisional dan menggabungkan citarasa moden.</span><span class="en">We preserve the authentic beauty of traditional heritage while infusing modern tastes.</span></p>
                     </div>
-                    <div class="reason-card">
-                        <img src="images/icon-value.jpg" alt="Hasil Seni Tempatan" class="reason-icon">
-                        <h4><span class="ms">Hasil Seni Tempatan</span><span class="en">Local Artistry</span></h4>
+                    <div class="feature-card reveal">
+                        <div class="icon-frame"><img src="images/icon-value.jpg" alt="" loading="lazy"></div>
+                        <h3><span class="ms">Hasil Seni Tempatan</span><span class="en">Local Artistry</span></h3>
                         <p><span class="ms">Setiap pembelian anda adalah satu usaha menyokong pengusaha tempatan sekaligus membantu memelihara warisan budaya.</span><span class="en">Your purchase supports local entrepreneurs while helping preserve fading cultural heritage.</span></p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 5. TENTANG KAMI -->
-        <section id="tentang" class="about-section text-center">
+        <!-- ================= 3. KOLEKSI KAMI ================= -->
+        <section id="koleksi" class="products-section">
             <div class="container">
-                <h2 class="section-title text-center" style="margin-bottom: 40px;">
-                    <span class="ms">Tentang Kami</span>
-                    <span class="en">About Us</span>
-                </h2>
-                
-                <div class="about-brand-grid mb-5 text-center">
-                    <div class="about-image">
-                        <img src="images/logo-citraloka.jpg" alt="Citraloka Logo" style="border-radius: 8px;">
+                <div class="section-head split">
+                    <div>
+                        <p class="eyebrow"><span class="ms">Koleksi Beg Tangan</span><span class="en">Handbag Collection</span></p>
+                        <h2 class="section-title">
+                            <span class="ms">Koleksi Kami</span>
+                            <span class="en">Our Collections</span>
+                        </h2>
                     </div>
-                    <div class="about-text">
-                        <h3 style="margin-top: 15px;"><span class="ms">Siapa Kami?</span><span class="en">Who Are We?</span></h3>
-                        <p style="text-align: center; max-width: 700px; margin: 0 auto;"><span class="ms">CITRALOKA merupakan sebuah jenama kraftangan artisan tempatan yang memfokuskan kepada penghasilan produk anyaman/sulaman moden buatan tangan yang diinspirasikan daripada motif tradisional dan warisan budaya Sabah.</span><span class="en">CITRALOKA is a local artisan handicraft brand focusing on modern handmade woven/embroidered products inspired by the traditional motifs and cultural heritage of Sabah.</span></p>
-                    </div>
+                    <a href="https://wa.me/60192595039?text=Hai,%20saya%20ingin%20bertanya%20tentang%20koleksi%20CITRALOKA" class="link-arrow" target="_blank" rel="noopener noreferrer">
+                        <span class="ms">Tanya Koleksi Penuh</span><span class="en">Ask About Full Collection</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    </a>
                 </div>
 
-                <hr style="border-color: #333; margin: 40px auto; max-width: 800px;">
+                <div class="filter-bar" role="group" aria-label="Tapis koleksi / Filter collection">
+                    <button class="chip is-active" data-filter="all" aria-pressed="true"><span class="ms">Semua</span><span class="en">All</span><sup>28</sup></button>
+                    <button class="chip" data-filter="rungus" aria-pressed="false"><span class="ms">Rungus</span><span class="en">Rungus</span><sup>16</sup></button>
+                    <button class="chip" data-filter="bajau-samah" aria-pressed="false"><span class="ms">Bajau Samah</span><span class="en">Bajau Samah</span><sup>2</sup></button>
+                    <button class="chip" data-filter="kadazan-dusun" aria-pressed="false"><span class="ms">Kadazan Dusun</span><span class="en">Kadazan Dusun</span><sup>5</sup></button>
+                    <button class="chip" data-filter="kedayan" aria-pressed="false"><span class="ms">Kedayan</span><span class="en">Kedayan</span><sup>2</sup></button>
+                    <button class="chip" data-filter="wristlet-pouch" aria-pressed="false"><span class="ms">Wristlet Pouch</span><span class="en">Wristlet Pouch</span><sup>3</sup></button>
+                </div>
 
-                <div class="about-founder-grid text-center">
-                    <div class="about-image">
-                        <img src="images/profile amirah alisha.jpg" alt="Amirah Alisha">
-                    </div>
-                    <div class="about-text">
-                        <h3 style="margin-top: 15px;"><span class="ms">Pengasas & Artisan</span><span class="en">Founder & Artisan</span></h3>
-                        <h4 style="color: #fff; margin-bottom:15px; font-size: 1.2rem;">Amirah Alisha</h4>
-                        <p style="text-align: center; max-width: 700px; margin: 0 auto;"><span class="ms">Berasal dari Pitas Sabah, berketurunan Rungus. Membesar dalam persekitaran yang kaya dengan seni kraf tangan tradisional. Beliau menubuhkan CITRALOKA sebagai sebuah jenama yang menghubungkan tradisi dengan gaya hidup moden melalui produk buatan tangan yang berkualiti.</span><span class="en">Hailing from Pitas Sabah, of Rungus descent. Growing up surrounded by rich traditional handicrafts, she founded CITRALOKA to bridge tradition with modern lifestyles through high-quality handcrafted products.</span></p>
+                <div class="product-grid" id="productGrid">
+                    <!-- ======================================================
+                         CARA TAMBAH PRODUK BARU:
+                         1. Salin satu blok <article class="product-card"> di bawah.
+                         2. Tukar data-cat kepada: rungus | bajau-samah | kadazan-dusun | kedayan | wristlet-pouch
+                         3. Tukar gambar, nama, badge, kod corak, motif, saiz, warna (ms/en) & link WhatsApp.
+                         4. Warna swatch: tukar nilai --sw (contoh: #141414 hitam, #f3f1ec putih).
+                         Kiraan produk & butang filter dikemas kini secara automatik.
+                         ====================================================== -->
+                    <!-- DISIMPAN (tidak dipaparkan): Nginolitan (Standard) RGS03 Hitam - images/nginolitan-4.png
+                         DISIMPAN (tidak dipaparkan): Nginolitan (Standard) RGS02 Putih - images/nginolitan-5.jpg -->
+                    <article class="product-card reveal" data-cat="rungus">
+                        <figure class="pc-media">
+                            <img src="images/randavi.png" alt="Randavi (LIMITED EDITION)" loading="lazy" decoding="async">
+                            <span class="pc-badge is-limited">Limited Edition</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Randavi</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Randavi%20(LIMITED%20EDITION)%20-%20RGS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus">
+                        <figure class="pc-media">
+                            <img src="images/sumuni-1.jpg" alt="Sumuni 1 (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sumuni</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS01</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS01?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus">
+                        <figure class="pc-media">
+                            <img src="images/sumuni-2.jpg" alt="Sumuni (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sumuni</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS06</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS06?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus">
+                        <figure class="pc-media">
+                            <img src="images/sumuni-3.jpg" alt="Sumuni 3 (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sumuni</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#f2c4c8"></i><span class="ms">Light Pink</span><span class="en">Light Pink</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus">
+                        <figure class="pc-media">
+                            <img src="images/sumuni-4.jpg" alt="Sumuni 4 (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sumuni</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#c9a7d6"></i><span class="ms">Lilac</span><span class="en">Lilac</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus">
+                        <figure class="pc-media">
+                            <img src="images/sumuni-5.png" alt="Sumuni 5 (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sumuni</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS03</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS03?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus">
+                        <figure class="pc-media">
+                            <img src="images/sumuni-6.jpg" alt="Sumuni 6 (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sumuni</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS05</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS05?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus">
+                        <figure class="pc-media">
+                            <img src="images/sumuni-7.png" alt="Sumuni 7 (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sumuni</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus">
+                        <figure class="pc-media">
+                            <img src="images/sumuni-8.jpg" alt="Sumuni 8 (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sumuni</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS07</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#6c3f9e"></i><span class="ms">Purple</span><span class="en">Purple</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS07?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus">
+                        <figure class="pc-media">
+                            <img src="images/nginolitan-1.png" alt="Nginolitan (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Nginolitan</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS01</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20(Standard)%20-%20RGS01?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus">
+                        <figure class="pc-media">
+                            <img src="images/nginolitan-3.jpg" alt="Nginolitan (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Nginolitan</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#f3f1ec"></i><span class="ms">Putih</span><span class="en">White</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20(Standard)%20-%20RGS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus">
+                        <figure class="pc-media">
+                            <img src="images/nginolitan-2.jpg" alt="Nginolitan (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Nginolitan</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS01</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#f3f1ec"></i><span class="ms">Putih</span><span class="en">White</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20(Standard)%20-%20RGS01?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus">
+                        <figure class="pc-media">
+                            <img src="images/nginolitan-7.jpg" alt="Nginolitan (Mini)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Mini</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Nginolitan</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS01</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:19cm x L:7cm x T:19cm</span></li>
+                                <li><i class="swatch" style="--sw:#f3f1ec"></i><span class="ms">Putih</span><span class="en">White</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20(Mini)%20-%20RGS01?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus">
+                        <figure class="pc-media">
+                            <img src="images/nginolitan-6.jpg" alt="Nginolitan (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Nginolitan</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS05</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#f6c7a4"></i><span class="ms">Aprikot</span><span class="en">Apricot</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20(Standard)%20-%20RGS05?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus">
+                        <figure class="pc-media">
+                            <img src="images/nginolitan-8.jpg" alt="Nginolitan (Mini)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Mini</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Nginolitan</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS01</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:19cm x L:7cm x T:19cm</span></li>
+                                <li><i class="swatch" style="--sw:#f6c7a4"></i><span class="ms">Aprikot</span><span class="en">Apricot</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20(Mini)%20-%20RGS01?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus">
+                        <figure class="pc-media">
+                            <img src="images/nginolitan-8.png" alt="Nginolitan Beg (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Nginolitan Beg</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS04</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#6f4e37"></i><span class="ms">Coffee</span><span class="en">Coffee</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20Beg%20(Standard)%20-%20RGS04?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="bajau-samah">
+                        <figure class="pc-media">
+                            <img src="images/badu-sipak.png" alt="Badu Sipak (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Badu Sipak</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">BJS01</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Bajau Samah</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Badu%20Sipak%20(Standard)%20-%20BJS01?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="bajau-samah">
+                        <figure class="pc-media">
+                            <img src="images/olos-1.jpg" alt="Olos Berangkit (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Olos Berangkit</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">BJS02</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Bajau Samah</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#d9a521"></i><span class="ms">Kuning Mustard</span><span class="en">Mustard Yellow</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Olos%20Beragkit%20(Standard)%20-%20BJS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="kadazan-dusun">
+                        <figure class="pc-media">
+                            <img src="images/sinipak-1.jpg" alt="Sinipak (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sinipak</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">DT01</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Dusun Tindal</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sinipak%20(Standard)%20-%20DT01?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="kadazan-dusun">
+                        <figure class="pc-media">
+                            <img src="images/sinipak-2.jpg" alt="Sinipak (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sinipak</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">DT02</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Dusun Tindal</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sinipak%20(Standard)%20-%20DT02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="kadazan-dusun">
+                        <figure class="pc-media">
+                            <img src="images/sinuangga-1.jpg" alt="Sinuangga (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sinuangga</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">KDZ01</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Kadazan</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sinuangga%20(Standard)%20-%20KDZ01?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="kadazan-dusun">
+                        <figure class="pc-media">
+                            <img src="images/sinuangga-2.jpg" alt="Sinuangga (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sinuangga</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">KDZ02</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Kadazan</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sinuangga%20(Standard)%20-%20KDZ02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="kadazan-dusun">
+                        <figure class="pc-media">
+                            <img src="images/sukob-beg.jpg" alt="Sukob (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sukob</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">DL01</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Dusun Lotud</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sukob%20(Standard)%20-%20DL01?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="kedayan">
+                        <figure class="pc-media">
+                            <img src="images/kubamban.png" alt="Kubamban" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Kubamban</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">KDN01</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Kedayan</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Kubamban%20(Standard)%20-%20KDN01?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="kedayan">
+                        <figure class="pc-media">
+                            <img src="images/kedayan.jpg" alt="Kubamban" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Kubamban</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">KDN02</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Kubamban</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Kubamban%20(Standard)%20-%20KDN02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="wristlet-pouch">
+                        <figure class="pc-media">
+                            <img src="images/orikos-1.jpg" alt="Orikos" loading="lazy" decoding="async">
+                            <span class="pc-badge">Wristlet Pouch</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Orikos</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:16cm x L:7cm x T:16cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Orikos%20(Wristlet%20Pouch)%20-%20RGS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="wristlet-pouch">
+                        <figure class="pc-media">
+                            <img src="images/orikos-2.jpg" alt="Orikos" loading="lazy" decoding="async">
+                            <span class="pc-badge">Wristlet Pouch</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Orikos</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:16cm x L:7cm x T:16cm</span></li>
+                                <li><i class="swatch" style="--sw:#f2c4c8"></i><span class="ms">Light Pink</span><span class="en">Light Pink</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Orikos%20(Wristlet%20Pouch)%20-%20RGS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="wristlet-pouch">
+                        <figure class="pc-media">
+                            <img src="images/orikos-3.jpg" alt="Orikos" loading="lazy" decoding="async">
+                            <span class="pc-badge">Wristlet Pouch</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Orikos</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:16cm x L:7cm x T:16cm</span></li>
+                                <li><i class="swatch" style="--sw:#f6c7a4"></i><span class="ms">Aprikot</span><span class="en">Apricot</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Orikos%20(Wristlet%20Pouch)%20-%20RGS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+                <p class="swipe-hint" aria-hidden="true"><span class="ms">Leret untuk lihat lagi</span><span class="en">Swipe to see more</span> &rarr;</p>
+            </div>
+        </section>
+
+        <!-- ================= 4. CARA TEMPAHAN ================= -->
+        <section id="cara-order" class="order-section weave-bg">
+            <div class="container">
+                <div class="section-head center">
+                    <p class="eyebrow"><span class="ms">Mudah &amp; Pantas</span><span class="en">Simple &amp; Quick</span></p>
+                    <h2 class="section-title ornament">
+                        <span class="ms">Cara Tempahan</span>
+                        <span class="en">How to Order</span>
+                    </h2>
+                </div>
+
+                <ol class="steps">
+                    <li class="step-card reveal">
+                        <span class="step-no">01</span>
+                        <div class="icon-frame"><img src="images/icon-1.jpg" alt="" loading="lazy"></div>
+                        <h3><span class="ms">Pilih Produk</span><span class="en">Select Product</span></h3>
+                        <p><span class="ms">Pilih produk dan tangkap layar (screenshot).</span><span class="en">Choose your product and take a screenshot.</span></p>
+                    </li>
+                    <li class="step-card reveal">
+                        <span class="step-no">02</span>
+                        <div class="icon-frame"><img src="images/icon-2.jpg" alt="" loading="lazy"></div>
+                        <h3><span class="ms">Hubungi Kami</span><span class="en">Contact Us</span></h3>
+                        <p><span class="ms">Hantar gambar produk/screenshot melalui WhatsApp.</span><span class="en">Send the screenshot to us via WhatsApp.</span></p>
+                    </li>
+                    <li class="step-card reveal">
+                        <span class="step-no">03</span>
+                        <div class="icon-frame"><img src="images/icon-3.jpg" alt="" loading="lazy"></div>
+                        <h3><span class="ms">Semakan Stok</span><span class="en">Stock Check</span></h3>
+                        <p><span class="ms">Kami akan membuat semakan ketersediaan produk.</span><span class="en">We will check the product availability for you.</span></p>
+                    </li>
+                    <li class="step-card reveal">
+                        <span class="step-no">04</span>
+                        <div class="icon-frame"><img src="images/icon-4.jpg" alt="" loading="lazy"></div>
+                        <h3><span class="ms">Pembayaran</span><span class="en">Payment</span></h3>
+                        <p><span class="ms">Bayaran atas talian melalui Kod QR. Hantar resit.</span><span class="en">Online payment via QR code. Send the receipt.</span></p>
+                    </li>
+                </ol>
+
+                <div class="shipping">
+                    <h3 class="sub-title"><span class="ms">Kaedah Penghantaran</span><span class="en">Shipping Methods</span></h3>
+                    <div class="shipping-grid">
+                        <div class="shipping-card reveal">
+                            <div class="icon-frame sm"><img src="images/icon-6.jpg" alt="" loading="lazy"></div>
+                            <div>
+                                <h4>COD / Self Pick-up</h4>
+                                <p><span class="ms">Kota Marudu dan Pitas sahaja.</span><span class="en">Kota Marudu and Pitas only.</span></p>
+                            </div>
+                        </div>
+                        <div class="shipping-card reveal">
+                            <div class="icon-frame sm"><img src="images/icon-7.jpg" alt="" loading="lazy"></div>
+                            <div>
+                                <h4><span class="ms">Pos</span><span class="en">Postage</span></h4>
+                                <p><span class="ms">Ke seluruh negara.</span><span class="en">Nationwide delivery.</span></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <!-- 6. HUBUNGI KAMI (MEDIA SOSIAL) -->
-        <section class="social-section text-center" style="padding: 60px 0;">
+
+        <!-- ================= 5. TENTANG KAMI ================= -->
+        <section id="tentang" class="about-section">
             <div class="container">
-                <h2 class="section-title text-center" style="color: var(--color-gold);">
-                    <span class="ms">Hubungi Kami</span>
-                    <span class="en">Contact Us</span>
-                </h2>
-                
-                <div class="social-links-grid">
-                    <a href="https://wa.me/60192595039?text=Hai,%20saya%20ingin%20bertanya%20tentang%20koleksi%20CITRALOKA" target="_blank" rel="noopener noreferrer" class="social-btn">
-                        <img src="images/logo-ws.jpg" alt="WhatsApp">
-                        <span>WhatsApp</span>
+                <div class="section-head center">
+                    <p class="eyebrow"><span class="ms">Kisah Kami</span><span class="en">Our Story</span></p>
+                    <h2 class="section-title ornament">
+                        <span class="ms">Tentang Kami</span>
+                        <span class="en">About Us</span>
+                    </h2>
+                </div>
+
+                <div class="about-grid">
+                    <article class="about-card reveal">
+                        <div class="about-media"><img src="images/logo-citraloka.jpg" alt="Logo CITRALOKA" loading="lazy"></div>
+                        <div class="about-text">
+                            <h3><span class="ms">Siapa Kami?</span><span class="en">Who Are We?</span></h3>
+                            <p><span class="ms">CITRALOKA merupakan sebuah jenama kraftangan artisan tempatan yang memfokuskan kepada penghasilan produk anyaman/sulaman moden buatan tangan yang diinspirasikan daripada motif tradisional dan warisan budaya Sabah.</span><span class="en">CITRALOKA is a local artisan handicraft brand focusing on modern handmade woven/embroidered products inspired by the traditional motifs and cultural heritage of Sabah.</span></p>
+                        </div>
+                    </article>
+
+                    <article class="about-card founder reveal">
+                        <div class="about-media portrait"><img src="images/profile amirah alisha.jpg" alt="Amirah Alisha" loading="lazy"></div>
+                        <div class="about-text">
+                            <p class="eyebrow"><span class="ms">Pengasas &amp; Artisan</span><span class="en">Founder &amp; Artisan</span></p>
+                            <h3 class="founder-name">Amirah Alisha</h3>
+                            <p><span class="ms">Berasal dari Pitas Sabah, berketurunan Rungus. Membesar dalam persekitaran yang kaya dengan seni kraf tangan tradisional. Beliau menubuhkan CITRALOKA sebagai sebuah jenama yang menghubungkan tradisi dengan gaya hidup moden melalui produk buatan tangan yang berkualiti.</span><span class="en">Hailing from Pitas Sabah, of Rungus descent. Growing up surrounded by rich traditional handicrafts, she founded CITRALOKA to bridge tradition with modern lifestyles through high-quality handcrafted products.</span></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= 6. HUBUNGI KAMI ================= -->
+        <section id="hubungi" class="contact-section">
+            <div class="contact-bg" aria-hidden="true"></div>
+            <div class="container">
+                <div class="section-head center">
+                    <p class="eyebrow"><span class="ms">Jom Berhubung</span><span class="en">Let's Connect</span></p>
+                    <h2 class="section-title ornament">
+                        <span class="ms">Hubungi Kami</span>
+                        <span class="en">Contact Us</span>
+                    </h2>
+                </div>
+
+                <div class="social-grid">
+                    <a href="https://wa.me/60192595039?text=Hai,%20saya%20ingin%20bertanya%20tentang%20koleksi%20CITRALOKA" target="_blank" rel="noopener noreferrer" class="social-btn reveal">
+                        <img src="images/logo-ws.jpg" alt="" loading="lazy"><span>WhatsApp</span>
                     </a>
-                    <a href="https://www.instagram.com/citraloka.official?stkn=dmg1bW5zcDU1dGhz" target="_blank" rel="noopener noreferrer" class="social-btn">
-                        <img src="images/logo-insta.jpg" alt="Instagram">
-                        <span>Instagram</span>
+                    <a href="https://www.instagram.com/citraloka.official?stkn=dmg1bW5zcDU1dGhz" target="_blank" rel="noopener noreferrer" class="social-btn reveal">
+                        <img src="images/logo-insta.jpg" alt="" loading="lazy"><span>Instagram</span>
                     </a>
-                    <a href="https://www.tiktok.com/@citraloka.official?_r=1&_t=ZS-99bxF5g6TV2" target="_blank" rel="noopener noreferrer" class="social-btn">
-                        <img src="images/logo-tiktok.jpg" alt="TikTok">
-                        <span>TikTok</span>
+                    <a href="https://www.tiktok.com/@citraloka.official?_r=1&amp;_t=ZS-99bxF5g6TV2" target="_blank" rel="noopener noreferrer" class="social-btn reveal">
+                        <img src="images/logo-tiktok.jpg" alt="" loading="lazy"><span>TikTok</span>
                     </a>
-                    <a href="https://www.facebook.com/share/1CHzWsGRTe/" target="_blank" rel="noopener noreferrer" class="social-btn">
-                        <img src="images/logo-fb.jpg" alt="Facebook">
-                        <span>Facebook</span>
+                    <a href="https://www.facebook.com/share/1CHzWsGRTe/" target="_blank" rel="noopener noreferrer" class="social-btn reveal">
+                        <img src="images/logo-fb.jpg" alt="" loading="lazy"><span>Facebook</span>
                     </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
+    <!-- ================= FOOTER ================= -->
     <footer class="site-footer">
-        <div class="container text-center">
-            <p style="color: #888; font-size: 0.9rem; margin-bottom: 5px;">ID Lesen Perniagaan: KM/2026/6129</p>
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <img src="images/title.jpg" alt="CITRALOKA" class="footer-logo" loading="lazy">
+                <p><span class="ms">Karya Tradisi, Sentuhan Masa Kini.</span><span class="en">Traditional Masterpiece, Modern Touch.</span></p>
+            </div>
+            <nav class="footer-nav" aria-label="Pautan footer">
+                <a href="#koleksi"><span class="ms">Koleksi</span><span class="en">Collection</span></a>
+                <a href="#cara-order"><span class="ms">Cara Order</span><span class="en">How to Order</span></a>
+                <a href="#tentang"><span class="ms">Tentang Kami</span><span class="en">About Us</span></a>
+                <a href="#hubungi"><span class="ms">Hubungi</span><span class="en">Contact</span></a>
+            </nav>
+        </div>
+        <div class="container footer-bottom">
+            <p>ID Lesen Perniagaan: KM/2026/6129</p>
             <p>&copy; 2026 CITRALOKA. <span class="ms">Hak Cipta Terpelihara.</span><span class="en">All Rights Reserved.</span></p>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/60192595039?text=Hai,%20saya%20ingin%20bertanya%20tentang%20koleksi%20CITRALOKA" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp CITRALOKA"><svg viewBox="0 0 24 24" aria-hidden="true" class="ico-fill"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg></a>
 
     <script src="script.js"></script>
 </body>
