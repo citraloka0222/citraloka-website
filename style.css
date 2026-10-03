@@ -154,7 +154,9 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; line-height: 
 .feature-card { position: relative; padding: 34px 26px 30px; border: 1px solid var(--line); border-radius: var(--radius); background: linear-gradient(180deg, rgba(212,175,55,.05), rgba(212,175,55,0) 60%), var(--surface); transition: transform .4s var(--ease), border-color .4s, box-shadow .4s; overflow: hidden; }
 .feature-card::before { content: ""; position: absolute; top: 0; left: 18%; right: 18%; height: 1px; background: linear-gradient(90deg, transparent, var(--gold-light), transparent); opacity: .7; }
 .feature-card:hover { transform: translateY(-6px); border-color: var(--line-strong); box-shadow: var(--shadow-gold); }
-.feature-card h3 { font-family: var(--font-sans); font-size: 1.02rem; font-weight: 600; margin: 22px 0 10px; color: var(--text); line-height: 1.35; }
+.feature-card .icon-frame { margin: 0 auto; }
+.feature-card h3 { font-family: var(--font-sans); font-size: 1.02rem; font-weight: 600; margin: 22px 0 10px; color: var(--text); line-height: 1.35; text-align: center; }
+.feature-card p { text-align: left; }
 .feature-card p { font-size: .88rem; color: var(--muted); }
 
 .icon-frame { width: 64px; height: 64px; border-radius: 50%; padding: 3px; background: var(--gold-grad); box-shadow: 0 0 22px -6px rgba(212,175,55,.6); }
@@ -308,9 +310,9 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; line-height: 
     .stat dt { font-size: .58rem; letter-spacing: .1em; white-space: normal; }
 
     .features-grid { grid-template-columns: 1fr; gap: 16px; }
-    .feature-card { display: grid; grid-template-columns: 56px 1fr; column-gap: 18px; padding: 22px; }
-    .feature-card .icon-frame { width: 56px; height: 56px; grid-row: span 2; }
-    .feature-card h3 { margin: 0 0 6px; }
+    .feature-card { padding: 26px 22px; }
+    .feature-card .icon-frame { width: 56px; height: 56px; }
+    .feature-card h3 { margin: 16px 0 8px; }
 
     /* Filter chips: single swipeable row */
     .filter-bar { flex-wrap: nowrap; overflow-x: auto; margin: 0 -20px 22px; padding: 12px 20px; scrollbar-width: none; }

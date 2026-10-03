@@ -1,7 +1,7 @@
 ================================================================
   CITRALOKA WEBSITE
   Karya Tradisi, Sentuhan Masa Kini
-  Versi: v2.2  |  Dikemas kini: 3 Oktober 2026
+  Versi: v2.3  |  Dikemas kini: 3 Oktober 2026
 ================================================================
 
 Website katalog beg tangan anyaman buatan tangan CITRALOKA,
@@ -56,7 +56,8 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
                  (menu hamburger di mobile)
   2. Hero        Cover photo di belakang tagline (bahagian tengah
                  gambar), butang CTA & statistik
-  3. Keistimewaan  "Kenapa Pilih Produk Ini" (4 kad)
+  3. Keistimewaan  "Kenapa Pilih Produk Ini" (4 kad; ikon & subtajuk
+                   di tengah, teks penerangan rata kiri)
   4. Koleksi     Menu filter melekat (sticky) + kad produk
                  Desktop: grid  |  Mobile: leret (carousel)
   5. Cara Tempahan  4 langkah + Kaedah Penghantaran
@@ -162,6 +163,8 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
     guna bahagian tengah gambar, dengan overlay gelap.
   - Menu filter koleksi sentiasa kelihatan (sticky) semasa
     scroll senarai produk.
+  - Kenapa Pilih Produk Ini: ikon & subtajuk di tengah,
+    teks penerangan kekal rata kiri.
   - Semua gambar & ikon dari folder images/ dalam repository.
 
 
@@ -184,6 +187,9 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
 ----------------------------------------------------------------
 11. LOG PERUBAHAN
 ----------------------------------------------------------------
+
+  v2.3  - Kenapa Pilih Produk Ini: ikon & subtajuk dipindah ke
+          alignment tengah (desktop & mobile).
 
   v2.2  - Cover photo dipindah ke belakang tagline (desktop &
           mobile), guna bahagian tengah gambar.
