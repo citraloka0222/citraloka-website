@@ -1,7 +1,7 @@
 ================================================================
   CITRALOKA WEBSITE
   Karya Tradisi, Sentuhan Masa Kini
-  Versi: v2.5  |  Dikemas kini: 9 Oktober 2026
+  Versi: v2.6  |  Dikemas kini: 9 Oktober 2026
 ================================================================
 
 Website katalog beg tangan anyaman buatan tangan CITRALOKA,
@@ -108,13 +108,19 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
                   "Koleksi Baharu" secara automatik.
                   Untuk buang label: padam kedua-duanya.
 
-     Rungus sahaja  Koleksi Rungus diasingkan ikut nama beg:
-                  Randavi > Nginolitan > Sumuni.
-                  Tambah data-group="randavi" / "nginolitan" / "sumuni"
-                  pada <article>, dan letak kad di bawah label
-                  kumpulannya (<div class="group-label" ...>).
-                  Label kumpulan & kiraan rekaan muncul bila filter
-                  Rungus dipilih (dikira automatik).
+     Nama beg     Setiap koleksi diasingkan ikut nama beg.
+                  Tambah data-group="nama-beg" (huruf kecil, guna
+                  sengkang, cth: "olos-berangkit") pada <article>, dan
+                  letak kad di bawah label kumpulannya
+                  (<div class="group-label" data-group-cat="..." ...>).
+                  Susunan Rungus: Randavi > Nginolitan > Sumuni.
+                  Koleksi lain: ikut susunan sedia ada.
+                  Koleksi dengan satu nama beg sahaja (cth: Kedayan)
+                  tiada label kumpulan.
+                  Label & kiraan rekaan muncul bila koleksi itu
+                  dipilih dalam filter (dikira automatik).
+     Susunan jenis  Dalam setiap kumpulan: Beg Standard dahulu,
+                  kemudian Beg Mini.
 
   4. Simpan. Jumlah produk (statistik hero & nombor pada butang
      filter) akan dikira AUTOMATIK. Tak perlu ubah nombor.
@@ -191,8 +197,10 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
     teks penerangan kekal rata kiri.
   - Produk baru dilabel "Koleksi Baharu" (BM) / "New Collection"
     (EN), label merah teks putih; butang filter kekal emas.
-  - Koleksi Rungus sahaja: diasingkan ikut nama beg
-    (Randavi > Nginolitan > Sumuni).
+  - Setiap koleksi diasingkan ikut nama beg (Rungus: Randavi >
+    Nginolitan > Sumuni; lain ikut susunan sedia ada). Koleksi
+    dengan satu nama beg sahaja dikekalkan tanpa label.
+  - Dalam setiap kumpulan: Beg Standard dahulu, kemudian Beg Mini.
   - Setiap beg tangan wajib ada Jenis Beg (Beg Standard / Beg Mini).
   - Gambar baru: WebP, kecil & ringan.
   - Semua gambar & ikon dari folder images/ dalam repository.
@@ -220,6 +228,15 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
 ----------------------------------------------------------------
 11. LOG PERUBAHAN
 ----------------------------------------------------------------
+
+  v2.6  - Pengasingan ikut nama beg diluaskan ke semua koleksi:
+          Bajau Samah (Badu Sipak, Olos Berangkit), Kadazan Dusun
+          (Nginolitan, Sinipak, Sinuangga, Sukob), Wristlet Pouch
+          (Vinasi, Orikos). Kedayan dikekalkan (Kubamban sahaja).
+        - Susunan dalam setiap kumpulan: Beg Standard > Beg Mini
+          (Nginolitan Rungus: 2 Beg Mini kini di hujung).
+        - Kiraan rekaan ikut koleksi + nama beg (Nginolitan Rungus
+          & Nginolitan Kadazan Dusun dikira berasingan).
 
   v2.5  - Label "Koleksi Baharu" pada kad produk kini MERAH dengan
           teks putih (butang filter Koleksi Baharu kekal emas).

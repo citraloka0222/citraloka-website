@@ -63,9 +63,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Keep counts in sync automatically with the cards in the HTML
     document.querySelectorAll('[data-product-count]').forEach(el => { el.textContent = cards.length; });
-    // Kiraan automatik untuk setiap kumpulan Rungus
+    // Kiraan automatik untuk setiap kumpulan nama beg (ikut koleksi + nama beg)
+    const groupLabels = grid ? [...grid.querySelectorAll('.group-label')] : [];
     document.querySelectorAll('[data-group-count]').forEach(el => {
-        const n = cards.filter(c => c.dataset.group === el.dataset.groupCount).length;
+        const cat = el.closest('.group-label')?.dataset.groupCat;
+        const n = cards.filter(c => c.dataset.group === el.dataset.groupCount && c.dataset.cat === cat).length;
         el.querySelectorAll('b').forEach(b => { b.textContent = n; });
         const en = el.querySelector('.en');
         if (en) en.lastChild.textContent = n === 1 ? ' design' : ' designs';
@@ -88,8 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
             c.classList.toggle('is-active', on);
             c.setAttribute('aria-pressed', String(on));
         });
-        // Label kumpulan Rungus (Randavi / Nginolitan / Sumuni) hanya bila filter Rungus
-        grid.classList.toggle('show-groups', f === 'rungus');
+        // Label kumpulan nama beg hanya dipapar bila satu koleksi dipilih
+        const hasGroups = groupLabels.some(l => l.dataset.groupCat === f);
+        grid.classList.toggle('show-groups', hasGroups);
+        groupLabels.forEach(l => { l.hidden = l.dataset.groupCat !== f; });
         cards.forEach(card => {
             const show = matches(card, f);
             card.hidden = !show;
