@@ -82,11 +82,11 @@
                 <dl class="hero-stats reveal">
                     <div class="stat">
                         <dt><span class="ms">Motif Etnik Sabah</span><span class="en">Sabah Ethnic Motifs</span></dt>
-                        <dd>4</dd>
+                        <dd>5</dd>
                     </div>
                     <div class="stat">
                         <dt><span class="ms">Rekaan Dalam Koleksi</span><span class="en">Designs in Collection</span></dt>
-                        <dd data-product-count>28</dd>
+                        <dd data-product-count>33</dd>
                     </div>
                     <div class="stat">
                         <dt><span class="ms">Buatan Tangan</span><span class="en">Handmade</span></dt>
@@ -150,8 +150,9 @@
                 </div>
 
                 <div class="filter-bar" role="group" aria-label="Tapis koleksi / Filter collection">
-                    <button class="chip is-active" data-filter="all" aria-pressed="true"><span class="ms">Semua</span><span class="en">All</span><sup>28</sup></button>
-                    <button class="chip" data-filter="rungus" aria-pressed="false"><span class="ms">Rungus</span><span class="en">Rungus</span><sup>16</sup></button>
+                    <button class="chip is-active" data-filter="all" aria-pressed="true"><span class="ms">Semua</span><span class="en">All</span><sup>33</sup></button>
+                    <button class="chip chip-new" data-filter="new" aria-pressed="false"><span class="ms">Koleksi Baharu</span><span class="en">New Collection</span><sup>5</sup></button>
+                    <button class="chip" data-filter="rungus" aria-pressed="false"><span class="ms">Rungus</span><span class="en">Rungus</span><sup>17</sup></button>
                     <button class="chip" data-filter="bajau-samah" aria-pressed="false"><span class="ms">Bajau Samah</span><span class="en">Bajau Samah</span><sup>2</sup></button>
                     <button class="chip" data-filter="kadazan-dusun" aria-pressed="false"><span class="ms">Kadazan Dusun</span><span class="en">Kadazan Dusun</span><sup>5</sup></button>
                     <button class="chip" data-filter="kedayan" aria-pressed="false"><span class="ms">Kedayan</span><span class="en">Kedayan</span><sup>2</sup></button>
@@ -164,11 +165,37 @@
                          1. Salin satu blok <article class="product-card"> di bawah.
                          2. Tukar data-cat kepada: rungus | bajau-samah | kadazan-dusun | kedayan | wristlet-pouch
                          3. Tukar gambar, nama, badge, kod corak, motif, saiz, warna (ms/en) & link WhatsApp.
-                         4. Warna swatch: tukar nilai --sw (contoh: #141414 hitam, #f3f1ec putih).
+                         4. Produk baru: tambah data-new="true" pada <article> + blok <span class="pc-new"> (lihat contoh KOLEKSI BAHARU).
+                            Untuk buang label baru: padam data-new="true" & blok <span class="pc-new">.
+                         5. Beg tangan: tambah baris Jenis Beg (Beg Standard / Beg Mini).
+                         6. Warna swatch: tukar nilai --sw (contoh: #141414 hitam, #f3f1ec putih).
                          Kiraan produk & butang filter dikemas kini secara automatik.
                          ====================================================== -->
                     <!-- DISIMPAN (tidak dipaparkan): Nginolitan (Standard) RGS03 Hitam - images/nginolitan-4.png
                          DISIMPAN (tidak dipaparkan): Nginolitan (Standard) RGS02 Putih - images/nginolitan-5.jpg -->
+                    <!-- KOLEKSI BAHARU: Nginolitan RGS02 Light Pink -->
+                    <article class="product-card reveal" data-cat="rungus" data-new="true">
+                        <figure class="pc-media">
+                            <img src="images/beg-rungus-light-pink.webp" alt="Nginolitan (Standard) - Light Pink" width="540" height="540" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                            <span class="pc-new"><span class="ms">Koleksi Baharu</span><span class="en">New Collection</span></span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Nginolitan</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#f2c4c8"></i><span class="ms">Light Pink</span><span class="en">Light Pink</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20(Standard)%20-%20RGS02%20Light%20Pink?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
                     <article class="product-card reveal" data-cat="rungus">
                         <figure class="pc-media">
                             <img src="images/randavi.png" alt="Randavi (LIMITED EDITION)" loading="lazy" decoding="async">
@@ -180,6 +207,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
@@ -200,6 +228,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">RGS01</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
@@ -220,6 +249,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">RGS06</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
@@ -240,6 +270,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#f2c4c8"></i><span class="ms">Light Pink</span><span class="en">Light Pink</span></li>
@@ -260,6 +291,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#c9a7d6"></i><span class="ms">Lilac</span><span class="en">Lilac</span></li>
@@ -280,6 +312,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">RGS03</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
@@ -300,6 +333,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">RGS05</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
@@ -320,6 +354,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
@@ -340,6 +375,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">RGS07</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#6c3f9e"></i><span class="ms">Purple</span><span class="en">Purple</span></li>
@@ -360,6 +396,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">RGS01</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
@@ -380,6 +417,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#f3f1ec"></i><span class="ms">Putih</span><span class="en">White</span></li>
@@ -400,6 +438,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">RGS01</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#f3f1ec"></i><span class="ms">Putih</span><span class="en">White</span></li>
@@ -420,6 +459,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">RGS01</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Mini</span><span class="en">Mini Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:19cm x L:7cm x T:19cm</span></li>
                                 <li><i class="swatch" style="--sw:#f3f1ec"></i><span class="ms">Putih</span><span class="en">White</span></li>
@@ -440,6 +480,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">RGS05</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#f6c7a4"></i><span class="ms">Aprikot</span><span class="en">Apricot</span></li>
@@ -460,6 +501,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">RGS01</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Mini</span><span class="en">Mini Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:19cm x L:7cm x T:19cm</span></li>
                                 <li><i class="swatch" style="--sw:#f6c7a4"></i><span class="ms">Aprikot</span><span class="en">Apricot</span></li>
@@ -480,6 +522,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">RGS04</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#6f4e37"></i><span class="ms">Coffee</span><span class="en">Coffee</span></li>
@@ -500,6 +543,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">BJS01</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Bajau Samah</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
@@ -520,11 +564,35 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">BJS02</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Bajau Samah</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#d9a521"></i><span class="ms">Kuning Mustard</span><span class="en">Mustard Yellow</span></li>
                             </ul>
                             <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Olos%20Berangkit%20(Standard)%20-%20BJS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- KOLEKSI BAHARU: Nginolitan PPR01 Aprikot -->
+                    <article class="product-card reveal" data-cat="kadazan-dusun" data-new="true">
+                        <figure class="pc-media">
+                            <img src="images/beg-kadazan-apricot.webp" alt="Nginolitan (Standard) - Aprikot" width="540" height="540" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                            <span class="pc-new"><span class="ms">Koleksi Baharu</span><span class="en">New Collection</span></span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Nginolitan</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">PPR01</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Kadazan Papar</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#f6c7a4"></i><span class="ms">Aprikot</span><span class="en">Apricot</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20(Standard)%20-%20PPR01%20Aprikot?" class="pc-cta" target="_blank" rel="noopener noreferrer">
                                 <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                             </a>
                         </div>
@@ -540,6 +608,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">DT01</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Dusun Tindal</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
@@ -560,6 +629,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">DT02</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Dusun Tindal</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
@@ -580,6 +650,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">KDZ01</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Kadazan</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
@@ -600,6 +671,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">KDZ02</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Kadazan</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
@@ -620,6 +692,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">DL01</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Dusun Lotud</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
@@ -640,6 +713,7 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">KDN01</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Kedayan</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
@@ -660,11 +734,78 @@
                                 <span class="pc-code" title="Kod Corak / Pattern Code">KDN02</span>
                             </div>
                             <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Kedayan</span></li>
                                 <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
                                 <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
                             </ul>
                             <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Kubamban%20(Standard)%20-%20KDN02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- KOLEKSI BAHARU: Vinasi RGS03 Kuning -->
+                    <article class="product-card reveal" data-cat="wristlet-pouch" data-new="true">
+                        <figure class="pc-media">
+                            <img src="images/pouch-rungus-yellow.webp" alt="Vinasi (Wristlet Pouch) - Kuning" width="540" height="540" loading="lazy" decoding="async">
+                            <span class="pc-badge">Wristlet Pouch</span>
+                            <span class="pc-new"><span class="ms">Koleksi Baharu</span><span class="en">New Collection</span></span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Vinasi</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS03</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:16cm x L:7cm x T:16cm</span></li>
+                                <li><i class="swatch" style="--sw:#e3c21d"></i><span class="ms">Kuning</span><span class="en">Yellow</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Vinasi%20(Wristlet%20Pouch)%20-%20RGS03%20Kuning?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- KOLEKSI BAHARU: Vinasi LDY01 Putih -->
+                    <article class="product-card reveal" data-cat="wristlet-pouch" data-new="true">
+                        <figure class="pc-media">
+                            <img src="images/pouch-lundayeh-white.webp" alt="Vinasi (Wristlet Pouch) - Putih" width="540" height="540" loading="lazy" decoding="async">
+                            <span class="pc-badge">Wristlet Pouch</span>
+                            <span class="pc-new"><span class="ms">Koleksi Baharu</span><span class="en">New Collection</span></span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Vinasi</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">LDY01</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Lundayeh</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:16cm x L:7cm x T:16cm</span></li>
+                                <li><i class="swatch" style="--sw:#f3f1ec"></i><span class="ms">Putih</span><span class="en">White</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Vinasi%20(Wristlet%20Pouch)%20-%20LDY01%20Putih?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- KOLEKSI BAHARU: Vinasi RGS04 Coffee -->
+                    <article class="product-card reveal" data-cat="wristlet-pouch" data-new="true">
+                        <figure class="pc-media">
+                            <img src="images/pouch-rungus-coffee.webp" alt="Vinasi (Wristlet Pouch) - Coffee" width="540" height="540" loading="lazy" decoding="async">
+                            <span class="pc-badge">Wristlet Pouch</span>
+                            <span class="pc-new"><span class="ms">Koleksi Baharu</span><span class="en">New Collection</span></span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Vinasi</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS04</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:16cm x L:7cm x T:16cm</span></li>
+                                <li><i class="swatch" style="--sw:#6f4e37"></i><span class="ms">Coffee</span><span class="en">Coffee</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Vinasi%20(Wristlet%20Pouch)%20-%20RGS04%20Coffee?" class="pc-cta" target="_blank" rel="noopener noreferrer">
                                 <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                             </a>
                         </div>

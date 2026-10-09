@@ -183,6 +183,12 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; line-height: 
 .product-card:hover .pc-media img { transform: scale(1.06); }
 .pc-badge { position: absolute; top: 12px; left: 12px; z-index: 1; padding: 5px 10px; font-size: .62rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--gold-light); background: rgba(11,9,7,.72); border: 1px solid var(--line-strong); border-radius: 3px; backdrop-filter: blur(6px); }
 .pc-badge.is-limited { background: var(--gold-grad); color: #1a1408; border-color: transparent; }
+.pc-new { position: absolute; top: 12px; left: 12px; z-index: 1; display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; font-size: .62rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #1a1408; background: var(--gold-grad); border-radius: 3px; box-shadow: 0 6px 16px -6px rgba(212,175,55,.8); }
+.pc-new::before { content: ""; width: 6px; height: 6px; transform: rotate(45deg); background: #1a1408; flex: none; }
+.product-card[data-new] .pc-badge { top: 44px; }
+.chip-new { border-color: var(--line-strong); color: var(--gold-light); }
+.chip-new::before { content: ""; width: 6px; height: 6px; transform: rotate(45deg); background: var(--gold); flex: none; }
+.chip-new.is-active::before { background: #1a1408; }
 .pc-body { display: flex; flex-direction: column; flex: 1; padding: 18px 20px 0; }
 .pc-head { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; margin-bottom: 14px; }
 .pc-name { font-size: 1.3rem; }

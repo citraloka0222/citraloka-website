@@ -1,7 +1,7 @@
 ================================================================
   CITRALOKA WEBSITE
   Karya Tradisi, Sentuhan Masa Kini
-  Versi: v2.3  |  Dikemas kini: 3 Oktober 2026
+  Versi: v2.4.1  |  Dikemas kini: 9 Oktober 2026
 ================================================================
 
 Website katalog beg tangan anyaman buatan tangan CITRALOKA,
@@ -43,6 +43,10 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
               sinipak-1.jpg, sinipak-2.jpg, sinuangga-1.jpg,
               sinuangga-2.jpg, sukob-beg.jpg, kubamban.png,
               kedayan.jpg, orikos-1.jpg, orikos-2.jpg, orikos-3.jpg
+  Koleksi Baharu (format WebP, 540x540, 25-44 KB setiap satu):
+              beg-rungus-light-pink.webp, beg-kadazan-apricot.webp,
+              pouch-rungus-yellow.webp, pouch-lundayeh-white.webp,
+              pouch-rungus-coffee.webp
 
   PENTING: Nama fail sensitif huruf besar/kecil & sambungan
   (.jpg / .png). Nama mesti sama tepat dengan dalam kod.
@@ -93,6 +97,17 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
      --sw         Warna bulatan swatch (lihat Seksyen 5)
      Link WA      Tukar nama produk & kod dalam teks mesej
 
+     Jenis Beg    WAJIB untuk beg tangan (bukan pouch). Baris pertama
+                  dalam <ul class="pc-specs">:
+                    <span class="ms">Beg Standard</span><span class="en">Standard Bag</span>
+                    <span class="ms">Beg Mini</span><span class="en">Mini Bag</span>
+     Koleksi Baharu  Tambah  data-new="true"  pada <article> DAN blok:
+                    <span class="pc-new"><span class="ms">Koleksi Baharu</span>
+                    <span class="en">New Collection</span></span>
+                  Produk akan dapat label emas & masuk filter
+                  "Koleksi Baharu" secara automatik.
+                  Untuk buang label: padam kedua-duanya.
+
   4. Simpan. Jumlah produk (statistik hero & nombor pada butang
      filter) akan dikira AUTOMATIK. Tak perlu ubah nombor.
 
@@ -112,6 +127,7 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
   Aprikot         #f6c7a4
   Coffee          #6f4e37
   Kuning Mustard  #d9a521
+  Kuning          #e3c21d
 
   Contoh:  <i class="swatch" style="--sw:#141414"></i>
 
@@ -165,12 +181,19 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
     scroll senarai produk.
   - Kenapa Pilih Produk Ini: ikon & subtajuk di tengah,
     teks penerangan kekal rata kiri.
+  - Produk baru dilabel "Koleksi Baharu" (BM) / "New Collection"
+    (EN) dan masuk filter Koleksi Baharu.
+  - Setiap beg tangan wajib ada Jenis Beg (Beg Standard / Beg Mini).
+  - Gambar baru: WebP, kecil & ringan.
   - Semua gambar & ikon dari folder images/ dalam repository.
 
 
 ----------------------------------------------------------------
 10. CARA UJI / LANCAR
 ----------------------------------------------------------------
+
+  Gambar produk baru: guna format WebP (lebih ringan), saiz
+  540x540 px, sasaran bawah 50 KB setiap gambar.
 
   Uji di komputer : Buka index.html terus dalam pelayar
                     (pastikan folder images/ berada sebelah).
@@ -187,6 +210,19 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
 ----------------------------------------------------------------
 11. LOG PERUBAHAN
 ----------------------------------------------------------------
+
+  v2.4.1 - Randavi (Limited Edition): tambah Jenis Beg = Beg Standard.
+        - Vinasi RGS04: warna kekal Coffee (disahkan).
+
+  v2.4  - Koleksi Baharu: 5 produk baru (Nginolitan RGS02 Light
+          Pink, Nginolitan PPR01 Aprikot, Vinasi RGS03 Kuning,
+          Vinasi LDY01 Putih, Vinasi RGS04 Coffee).
+        - Label "Koleksi Baharu" / "New Collection" ikut bahasa
+          website + butang filter "Koleksi Baharu".
+        - Maklumat Jenis Beg (Beg Standard / Beg Mini) pada
+          semua kad beg tangan.
+        - Gambar baru dioptimumkan ke WebP (~70% lebih ringan).
+        - Statistik Motif Etnik Sabah: 4 -> 5 (tambah Lundayeh).
 
   v2.3  - Kenapa Pilih Produk Ini: ikon & subtajuk dipindah ke
           alignment tengah (desktop & mobile).

@@ -61,9 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Keep counts in sync automatically with the cards in the HTML
     document.querySelectorAll('[data-product-count]').forEach(el => { el.textContent = cards.length; });
+    // 'all' = semua, 'new' = Koleksi Baharu (data-new="true"), lain-lain = data-cat
+    const matches = (card, f) => f === 'all' || (f === 'new' ? card.dataset.new === 'true' : card.dataset.cat === f);
     chips.forEach(chip => {
         const f = chip.dataset.filter;
-        const n = f === 'all' ? cards.length : cards.filter(c => c.dataset.cat === f).length;
+        const n = cards.filter(c => matches(c, f)).length;
         const sup = chip.querySelector('sup');
         if (sup) sup.textContent = n;
         if (n === 0 && f !== 'all') chip.hidden = true;
@@ -77,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
             c.setAttribute('aria-pressed', String(on));
         });
         cards.forEach(card => {
-            const show = f === 'all' || card.dataset.cat === f;
+            const show = matches(card, f);
             card.hidden = !show;
             if (show) card.classList.add('is-in');
         });
