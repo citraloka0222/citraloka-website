@@ -48,7 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateActive = () => {
         const mid = window.innerHeight * 0.45;
         let current = sections[0];
-        sections.forEach(s => { if (s.getBoundingClientRect().top <= mid) current = s; });
+        let best = -Infinity;
+        // Pilih seksyen paling dekat di atas garis tengah (ikut kedudukan sebenar, bukan susunan menu)
+        sections.forEach(s => { const t = s.getBoundingClientRect().top; if (t <= mid && t > best) { best = t; current = s; } });
         navLinks.forEach(a => a.classList.toggle('is-active', current && a.getAttribute('href') === '#' + current.id));
     };
     updateActive();
@@ -61,6 +63,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Keep counts in sync automatically with the cards in the HTML
     document.querySelectorAll('[data-product-count]').forEach(el => { el.textContent = cards.length; });
+    // Kiraan automatik untuk setiap kumpulan Rungus
+    document.querySelectorAll('[data-group-count]').forEach(el => {
+        const n = cards.filter(c => c.dataset.group === el.dataset.groupCount).length;
+        el.querySelectorAll('b').forEach(b => { b.textContent = n; });
+        const en = el.querySelector('.en');
+        if (en) en.lastChild.textContent = n === 1 ? ' design' : ' designs';
+    });
+
     // 'all' = semua, 'new' = Koleksi Baharu (data-new="true"), lain-lain = data-cat
     const matches = (card, f) => f === 'all' || (f === 'new' ? card.dataset.new === 'true' : card.dataset.cat === f);
     chips.forEach(chip => {
@@ -78,6 +88,8 @@ document.addEventListener('DOMContentLoaded', () => {
             c.classList.toggle('is-active', on);
             c.setAttribute('aria-pressed', String(on));
         });
+        // Label kumpulan Rungus (Randavi / Nginolitan / Sumuni) hanya bila filter Rungus
+        grid.classList.toggle('show-groups', f === 'rungus');
         cards.forEach(card => {
             const show = matches(card, f);
             card.hidden = !show;

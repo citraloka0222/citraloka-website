@@ -168,13 +168,48 @@
                          4. Produk baru: tambah data-new="true" pada <article> + blok <span class="pc-new"> (lihat contoh KOLEKSI BAHARU).
                             Untuk buang label baru: padam data-new="true" & blok <span class="pc-new">.
                          5. Beg tangan: tambah baris Jenis Beg (Beg Standard / Beg Mini).
-                         6. Warna swatch: tukar nilai --sw (contoh: #141414 hitam, #f3f1ec putih).
+                         6. Koleksi Rungus diasingkan ikut nama beg (Randavi > Nginolitan > Sumuni).
+                            Produk Rungus baru: tambah data-group="randavi|nginolitan|sumuni" & letak di bawah label kumpulannya.
+                         7. Warna swatch: tukar nilai --sw (contoh: #141414 hitam, #f3f1ec putih).
                          Kiraan produk & butang filter dikemas kini secara automatik.
                          ====================================================== -->
                     <!-- DISIMPAN (tidak dipaparkan): Nginolitan (Standard) RGS03 Hitam - images/nginolitan-4.png
                          DISIMPAN (tidak dipaparkan): Nginolitan (Standard) RGS02 Putih - images/nginolitan-5.jpg -->
+                    <!-- ===== RUNGUS: RANDAVI ===== -->
+                    <div class="group-label" data-group-cat="rungus" data-group="randavi" role="presentation">
+                        <span class="group-eyebrow"><span class="ms">Koleksi Rungus</span><span class="en">Rungus Collection</span></span>
+                        <h4 class="group-name">Randavi</h4>
+                        <span class="group-count" data-group-count="randavi"><span class="ms"><b>1</b> rekaan</span><span class="en"><b>1</b> design</span></span>
+                    </div>
+                    <article class="product-card reveal" data-cat="rungus" data-group="randavi">
+                        <figure class="pc-media">
+                            <img src="images/randavi.png" alt="Randavi (LIMITED EDITION)" loading="lazy" decoding="async">
+                            <span class="pc-badge is-limited">Limited Edition</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Randavi</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Randavi%20(LIMITED%20EDITION)%20-%20RGS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- ===== RUNGUS: NGINOLITAN ===== -->
+                    <div class="group-label" data-group-cat="rungus" data-group="nginolitan" role="presentation">
+                        <span class="group-eyebrow"><span class="ms">Koleksi Rungus</span><span class="en">Rungus Collection</span></span>
+                        <h4 class="group-name">Nginolitan</h4>
+                        <span class="group-count" data-group-count="nginolitan"><span class="ms"><b>8</b> rekaan</span><span class="en"><b>8</b> designs</span></span>
+                    </div>
                     <!-- KOLEKSI BAHARU: Nginolitan RGS02 Light Pink -->
-                    <article class="product-card reveal" data-cat="rungus" data-new="true">
+                    <article class="product-card reveal" data-cat="rungus" data-group="nginolitan" data-new="true">
                         <figure class="pc-media">
                             <img src="images/beg-rungus-light-pink.webp" alt="Nginolitan (Standard) - Light Pink" width="540" height="540" loading="lazy" decoding="async">
                             <span class="pc-badge">Standard</span>
@@ -196,196 +231,7 @@
                             </a>
                         </div>
                     </article>
-                    <article class="product-card reveal" data-cat="rungus">
-                        <figure class="pc-media">
-                            <img src="images/randavi.png" alt="Randavi (LIMITED EDITION)" loading="lazy" decoding="async">
-                            <span class="pc-badge is-limited">Limited Edition</span>
-                        </figure>
-                        <div class="pc-body">
-                            <div class="pc-head">
-                                <h4 class="pc-name">Randavi</h4>
-                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
-                            </div>
-                            <ul class="pc-specs">
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
-                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
-                            </ul>
-                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Randavi%20(LIMITED%20EDITION)%20-%20RGS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
-                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="product-card reveal" data-cat="rungus">
-                        <figure class="pc-media">
-                            <img src="images/sumuni-1.jpg" alt="Sumuni 1 (Standard)" loading="lazy" decoding="async">
-                            <span class="pc-badge">Standard</span>
-                        </figure>
-                        <div class="pc-body">
-                            <div class="pc-head">
-                                <h4 class="pc-name">Sumuni</h4>
-                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS01</span>
-                            </div>
-                            <ul class="pc-specs">
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
-                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
-                            </ul>
-                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS01?" class="pc-cta" target="_blank" rel="noopener noreferrer">
-                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="product-card reveal" data-cat="rungus">
-                        <figure class="pc-media">
-                            <img src="images/sumuni-2.jpg" alt="Sumuni (Standard)" loading="lazy" decoding="async">
-                            <span class="pc-badge">Standard</span>
-                        </figure>
-                        <div class="pc-body">
-                            <div class="pc-head">
-                                <h4 class="pc-name">Sumuni</h4>
-                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS06</span>
-                            </div>
-                            <ul class="pc-specs">
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
-                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
-                            </ul>
-                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS06?" class="pc-cta" target="_blank" rel="noopener noreferrer">
-                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="product-card reveal" data-cat="rungus">
-                        <figure class="pc-media">
-                            <img src="images/sumuni-3.jpg" alt="Sumuni 3 (Standard)" loading="lazy" decoding="async">
-                            <span class="pc-badge">Standard</span>
-                        </figure>
-                        <div class="pc-body">
-                            <div class="pc-head">
-                                <h4 class="pc-name">Sumuni</h4>
-                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
-                            </div>
-                            <ul class="pc-specs">
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
-                                <li><i class="swatch" style="--sw:#f2c4c8"></i><span class="ms">Light Pink</span><span class="en">Light Pink</span></li>
-                            </ul>
-                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
-                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="product-card reveal" data-cat="rungus">
-                        <figure class="pc-media">
-                            <img src="images/sumuni-4.jpg" alt="Sumuni 4 (Standard)" loading="lazy" decoding="async">
-                            <span class="pc-badge">Standard</span>
-                        </figure>
-                        <div class="pc-body">
-                            <div class="pc-head">
-                                <h4 class="pc-name">Sumuni</h4>
-                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
-                            </div>
-                            <ul class="pc-specs">
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
-                                <li><i class="swatch" style="--sw:#c9a7d6"></i><span class="ms">Lilac</span><span class="en">Lilac</span></li>
-                            </ul>
-                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
-                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="product-card reveal" data-cat="rungus">
-                        <figure class="pc-media">
-                            <img src="images/sumuni-5.png" alt="Sumuni 5 (Standard)" loading="lazy" decoding="async">
-                            <span class="pc-badge">Standard</span>
-                        </figure>
-                        <div class="pc-body">
-                            <div class="pc-head">
-                                <h4 class="pc-name">Sumuni</h4>
-                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS03</span>
-                            </div>
-                            <ul class="pc-specs">
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
-                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
-                            </ul>
-                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS03?" class="pc-cta" target="_blank" rel="noopener noreferrer">
-                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="product-card reveal" data-cat="rungus">
-                        <figure class="pc-media">
-                            <img src="images/sumuni-6.jpg" alt="Sumuni 6 (Standard)" loading="lazy" decoding="async">
-                            <span class="pc-badge">Standard</span>
-                        </figure>
-                        <div class="pc-body">
-                            <div class="pc-head">
-                                <h4 class="pc-name">Sumuni</h4>
-                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS05</span>
-                            </div>
-                            <ul class="pc-specs">
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
-                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
-                            </ul>
-                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS05?" class="pc-cta" target="_blank" rel="noopener noreferrer">
-                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="product-card reveal" data-cat="rungus">
-                        <figure class="pc-media">
-                            <img src="images/sumuni-7.png" alt="Sumuni 7 (Standard)" loading="lazy" decoding="async">
-                            <span class="pc-badge">Standard</span>
-                        </figure>
-                        <div class="pc-body">
-                            <div class="pc-head">
-                                <h4 class="pc-name">Sumuni</h4>
-                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
-                            </div>
-                            <ul class="pc-specs">
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
-                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
-                            </ul>
-                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
-                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="product-card reveal" data-cat="rungus">
-                        <figure class="pc-media">
-                            <img src="images/sumuni-8.jpg" alt="Sumuni 8 (Standard)" loading="lazy" decoding="async">
-                            <span class="pc-badge">Standard</span>
-                        </figure>
-                        <div class="pc-body">
-                            <div class="pc-head">
-                                <h4 class="pc-name">Sumuni</h4>
-                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS07</span>
-                            </div>
-                            <ul class="pc-specs">
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
-                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
-                                <li><i class="swatch" style="--sw:#6c3f9e"></i><span class="ms">Purple</span><span class="en">Purple</span></li>
-                            </ul>
-                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS07?" class="pc-cta" target="_blank" rel="noopener noreferrer">
-                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-                            </a>
-                        </div>
-                    </article>
-                    <article class="product-card reveal" data-cat="rungus">
+                    <article class="product-card reveal" data-cat="rungus" data-group="nginolitan">
                         <figure class="pc-media">
                             <img src="images/nginolitan-1.png" alt="Nginolitan (Standard)" loading="lazy" decoding="async">
                             <span class="pc-badge">Standard</span>
@@ -406,7 +252,7 @@
                             </a>
                         </div>
                     </article>
-                    <article class="product-card reveal" data-cat="rungus">
+                    <article class="product-card reveal" data-cat="rungus" data-group="nginolitan">
                         <figure class="pc-media">
                             <img src="images/nginolitan-3.jpg" alt="Nginolitan (Standard)" loading="lazy" decoding="async">
                             <span class="pc-badge">Standard</span>
@@ -427,7 +273,7 @@
                             </a>
                         </div>
                     </article>
-                    <article class="product-card reveal" data-cat="rungus">
+                    <article class="product-card reveal" data-cat="rungus" data-group="nginolitan">
                         <figure class="pc-media">
                             <img src="images/nginolitan-2.jpg" alt="Nginolitan (Standard)" loading="lazy" decoding="async">
                             <span class="pc-badge">Standard</span>
@@ -448,7 +294,7 @@
                             </a>
                         </div>
                     </article>
-                    <article class="product-card reveal" data-cat="rungus">
+                    <article class="product-card reveal" data-cat="rungus" data-group="nginolitan">
                         <figure class="pc-media">
                             <img src="images/nginolitan-7.jpg" alt="Nginolitan (Mini)" loading="lazy" decoding="async">
                             <span class="pc-badge">Mini</span>
@@ -469,7 +315,7 @@
                             </a>
                         </div>
                     </article>
-                    <article class="product-card reveal" data-cat="rungus">
+                    <article class="product-card reveal" data-cat="rungus" data-group="nginolitan">
                         <figure class="pc-media">
                             <img src="images/nginolitan-6.jpg" alt="Nginolitan (Standard)" loading="lazy" decoding="async">
                             <span class="pc-badge">Standard</span>
@@ -490,7 +336,7 @@
                             </a>
                         </div>
                     </article>
-                    <article class="product-card reveal" data-cat="rungus">
+                    <article class="product-card reveal" data-cat="rungus" data-group="nginolitan">
                         <figure class="pc-media">
                             <img src="images/nginolitan-8.jpg" alt="Nginolitan (Mini)" loading="lazy" decoding="async">
                             <span class="pc-badge">Mini</span>
@@ -511,7 +357,7 @@
                             </a>
                         </div>
                     </article>
-                    <article class="product-card reveal" data-cat="rungus">
+                    <article class="product-card reveal" data-cat="rungus" data-group="nginolitan">
                         <figure class="pc-media">
                             <img src="images/nginolitan-8.png" alt="Nginolitan (Standard)" loading="lazy" decoding="async">
                             <span class="pc-badge">Standard</span>
@@ -528,6 +374,180 @@
                                 <li><i class="swatch" style="--sw:#6f4e37"></i><span class="ms">Coffee</span><span class="en">Coffee</span></li>
                             </ul>
                             <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Nginolitan%20(Standard)%20-%20RGS04?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <!-- ===== RUNGUS: SUMUNI ===== -->
+                    <div class="group-label" data-group-cat="rungus" data-group="sumuni" role="presentation">
+                        <span class="group-eyebrow"><span class="ms">Koleksi Rungus</span><span class="en">Rungus Collection</span></span>
+                        <h4 class="group-name">Sumuni</h4>
+                        <span class="group-count" data-group-count="sumuni"><span class="ms"><b>8</b> rekaan</span><span class="en"><b>8</b> designs</span></span>
+                    </div>
+                    <article class="product-card reveal" data-cat="rungus" data-group="sumuni">
+                        <figure class="pc-media">
+                            <img src="images/sumuni-1.jpg" alt="Sumuni 1 (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sumuni</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS01</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS01?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus" data-group="sumuni">
+                        <figure class="pc-media">
+                            <img src="images/sumuni-2.jpg" alt="Sumuni (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sumuni</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS06</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS06?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus" data-group="sumuni">
+                        <figure class="pc-media">
+                            <img src="images/sumuni-3.jpg" alt="Sumuni 3 (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sumuni</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#f2c4c8"></i><span class="ms">Light Pink</span><span class="en">Light Pink</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus" data-group="sumuni">
+                        <figure class="pc-media">
+                            <img src="images/sumuni-4.jpg" alt="Sumuni 4 (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sumuni</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#c9a7d6"></i><span class="ms">Lilac</span><span class="en">Lilac</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus" data-group="sumuni">
+                        <figure class="pc-media">
+                            <img src="images/sumuni-5.png" alt="Sumuni 5 (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sumuni</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS03</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS03?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus" data-group="sumuni">
+                        <figure class="pc-media">
+                            <img src="images/sumuni-6.jpg" alt="Sumuni 6 (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sumuni</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS05</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS05?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus" data-group="sumuni">
+                        <figure class="pc-media">
+                            <img src="images/sumuni-7.png" alt="Sumuni 7 (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sumuni</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS02</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#141414"></i><span class="ms">Hitam</span><span class="en">Black</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS02?" class="pc-cta" target="_blank" rel="noopener noreferrer">
+                                <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="product-card reveal" data-cat="rungus" data-group="sumuni">
+                        <figure class="pc-media">
+                            <img src="images/sumuni-8.jpg" alt="Sumuni 8 (Standard)" loading="lazy" decoding="async">
+                            <span class="pc-badge">Standard</span>
+                        </figure>
+                        <div class="pc-body">
+                            <div class="pc-head">
+                                <h4 class="pc-name">Sumuni</h4>
+                                <span class="pc-code" title="Kod Corak / Pattern Code">RGS07</span>
+                            </div>
+                            <ul class="pc-specs">
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="ms">Beg Standard</span><span class="en">Standard Bag</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 12 12 22 2 12Z"/><path d="M12 7 17 12 12 17 7 12Z"/></svg><span>Rungus</span></li>
+                                <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8h18v8H3z"/><path d="M7 8v3M11 8v4M15 8v3M19 8v4"/></svg><span>P:22cm x L:9cm x T:22cm</span></li>
+                                <li><i class="swatch" style="--sw:#6c3f9e"></i><span class="ms">Purple</span><span class="en">Purple</span></li>
+                            </ul>
+                            <a href="https://wa.me/60192595039?text=Hai,%20boleh%20saya%20dapatkan%20harga%20untuk%20beg%20Sumuni%20(Standard)%20-%20RGS07?" class="pc-cta" target="_blank" rel="noopener noreferrer">
                                 <span><span class="ms">Tanya Harga di WhatsApp</span><span class="en">Ask Price on WhatsApp</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                             </a>
                         </div>
