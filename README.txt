@@ -1,7 +1,7 @@
 ================================================================
   CITRALOKA WEBSITE
   Karya Tradisi, Sentuhan Masa Kini
-  Versi: v2.6  |  Dikemas kini: 9 Oktober 2026
+  Versi: v2.7  |  Dikemas kini: 13 Oktober 2026
 ================================================================
 
 Website katalog beg tangan anyaman buatan tangan CITRALOKA,
@@ -46,7 +46,8 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
   Koleksi Baharu (format WebP, 540x540, 25-44 KB setiap satu):
               beg-rungus-light-pink.webp, beg-kadazan-apricot.webp,
               pouch-rungus-yellow.webp, pouch-lundayeh-white.webp,
-              pouch-rungus-coffee.webp
+              pouch-rungus-coffee.webp, sumuni-mini-lilac.webp,
+              sumuni-mini-dark-pink.webp
 
   PENTING: Nama fail sensitif huruf besar/kecil & sambungan
   (.jpg / .png). Nama mesti sama tepat dengan dalam kod.
@@ -84,7 +85,7 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
 
      data-cat     Kategori filter (pilih satu):
                     rungus | bajau-samah | kadazan-dusun |
-                    kedayan | wristlet-pouch
+                    kedayan | murut | wristlet-pouch
      <img src>    Laluan gambar, contoh: images/nama-baru.jpg
      alt          Nama produk (untuk SEO & aksesibiliti)
      pc-badge     Standard / Mini / Limited Edition
@@ -142,6 +143,7 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
   Coffee          #6f4e37
   Kuning Mustard  #d9a521
   Kuning          #e3c21d
+  Dark Pink       #c2185b
 
   Contoh:  <i class="swatch" style="--sw:#141414"></i>
 
@@ -228,6 +230,12 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
 ----------------------------------------------------------------
 11. LOG PERUBAHAN
 ----------------------------------------------------------------
+
+  v2.7  - Koleksi Baharu: Sumuni (Mini) RGS02 Lilac (Rungus, hujung
+          kumpulan Sumuni) & Sumuni (Mini) MRT01 Dark Pink.
+        - Koleksi baru "Murut" + butang filter Murut.
+        - Statistik Motif Etnik Sabah: 5 -> 6 (tambah Murut).
+        - Jumlah produk: 35.
 
   v2.6  - Pengasingan ikut nama beg diluaskan ke semua koleksi:
           Bajau Samah (Badu Sipak, Olos Berangkit), Kadazan Dusun
