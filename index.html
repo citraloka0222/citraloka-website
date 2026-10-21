@@ -32,8 +32,10 @@
             <p class="sb-text">
                 <span class="sb-pill sale-teaser-only"><span class="ms">Bermula Esok</span><span class="en">Starts Tomorrow</span></span>
                 <span class="sb-pill sale-live-only">Sale</span>
-                <span class="sb-long"><span class="ms">22–25 Okt · Beg Mini <s>RM115</s> <b>RM99</b> · Pos Percuma Seluruh Malaysia</span><span class="en">22–25 Oct · Mini Bags <s>RM115</s> <b>RM99</b> · Free Shipping Nationwide</span></span>
-                <span class="sb-short"><span class="ms">Beg Mini <b>RM99</b> · Pos Percuma</span><span class="en">Mini Bags <b>RM99</b> · Free Shipping</span></span>
+                <span class="sb-msgs" id="saleBarMsgs">
+                    <span class="sb-msg is-active"><span class="ms">Beg Mini <s>RM115</s> <b>RM99</b><span class="sb-long"> · 22–25 Okt</span></span><span class="en">Mini Bags <s>RM115</s> <b>RM99</b><span class="sb-long"> · 22–25 Oct</span></span></span>
+                    <span class="sb-msg"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h11v10H2zM13 9h4l4 4v3h-8"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><span class="ms"><b>Pos Percuma</b> untuk SEMUA koleksi<span class="sb-long"> · Seluruh Malaysia · 22–25 Okt</span></span><span class="en"><b>Free Shipping</b> on ALL collections<span class="sb-long"> · Nationwide · 22–25 Oct</span></span></span>
+                </span>
             </p>
             <span class="sb-count" aria-live="off"><span class="ms sale-teaser-only">Mula dalam</span><span class="en sale-teaser-only">Starts in</span><span class="ms sale-live-only">Tamat dalam</span><span class="en sale-live-only">Ends in</span> <b data-countdown="short">--</b></span>
             <a href="#koleksi" class="sb-link" data-sale-jump><span class="ms">Lihat Beg Mini</span><span class="en">Shop Mini Bags</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
@@ -127,7 +129,6 @@
                         <p class="hs-eyebrow"><span class="ms">Sale · 22–25 Okt</span><span class="en">Sale · 22–25 Oct</span></p>
                         <h2 class="hs-title"><span class="ms">Beg Mini</span><span class="en">Mini Bags</span></h2>
                         <p class="hs-price"><s>RM115</s><strong>RM99</strong><span class="hs-save">-RM16</span></p>
-                        <p class="hs-perk"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h11v10H2zM13 9h4l4 4v3h-8"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><span class="ms">Pos percuma seluruh Malaysia untuk semua order</span><span class="en">Free nationwide shipping on all orders</span></p>
                         <div class="hs-count">
                             <span class="hs-count-label"><span class="ms sale-teaser-only">Bermula dalam</span><span class="en sale-teaser-only">Starts in</span><span class="ms sale-live-only">Tamat dalam</span><span class="en sale-live-only">Ends in</span></span>
                             <div class="cd" data-countdown="full">
@@ -143,6 +144,7 @@
                         </div>
                         <p class="hs-note"><span class="ms">Stok terhad · First come, first served</span><span class="en">Limited stock · First come, first served</span></p>
                     </div>
+                    <p class="hs-ship"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h11v10H2zM13 9h4l4 4v3h-8"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><span><span class="ms"><b>+ Pos Percuma untuk SEMUA koleksi</b><small>Seluruh Malaysia · 22–25 Okt</small></span><span class="en"><b>+ Free Shipping on ALL collections</b><small>Nationwide · 22–25 Oct</small></span></span></p>
                 </aside>
             </div>
         </section>
@@ -211,6 +213,9 @@
                     <button class="chip" data-filter="wristlet-pouch" aria-pressed="false"><span class="ms">Wristlet Pouch</span><span class="en">Wristlet Pouch</span><sup>6</sup></button>
                 </div>
 
+                <!-- Notis pos percuma (semua filter, auto ikut tarikh sale) -->
+                <p class="ship-strip sale-on-only"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h11v10H2zM13 9h4l4 4v3h-8"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><span><span class="ms"><b>Pos Percuma untuk SEMUA koleksi</b> · seluruh Malaysia · 22–25 Okt<span class="sale-teaser-only"> (bermula esok)</span></span><span class="en"><b>Free Shipping on ALL collections</b> · nationwide · 22–25 Oct<span class="sale-teaser-only"> (starts tomorrow)</span></span></span></p>
+
                 <div class="sale-terms sale-outline" id="saleTerms" hidden>
                     <div class="st-head">
                         <p class="st-title"><span class="ms">Sale Beg Mini · 22–25 Okt</span><span class="en">Mini Bag Sale · 22–25 Oct</span></p>
@@ -220,7 +225,6 @@
                     <ul class="st-list">
                         <li><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg><span><span class="ms"><b>Stok terhad!</b> First come, first served.</span><span class="en"><b>Limited stock!</b> First come, first served.</span></span></li>
                         <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3M12 15v2"/></svg><span><span class="ms"><b>Tidak terima booking/lock</b> tanpa deposit.</span><span class="en"><b>No booking/hold</b> without deposit.</span></span></li>
-                        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h11v10H2zM13 9h4l4 4v3h-8"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><span><span class="ms"><b>Pos percuma</b> seluruh Malaysia untuk semua order.</span><span class="en"><b>Free shipping</b> nationwide on all orders.</span></span></li>
                     </ul>
                 </div>
 

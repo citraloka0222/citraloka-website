@@ -312,7 +312,11 @@ body:not(.sale-on) .sale-on-only { display: none !important; }
 .sb-text s { color: var(--muted-2); }
 .sb-text b { color: #fff; font-weight: 700; }
 .sb-pill { padding: 2px 9px; border: 1px solid var(--sale); border-radius: 999px; color: var(--sale-light); font-size: .64rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; }
-.sb-short { display: none; }
+/* Dua mesej bergilir (Beg Mini RM99 / Pos Percuma SEMUA koleksi) */
+.sb-msgs { display: grid; }
+.sb-msg { grid-area: 1 / 1; display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; opacity: 0; transform: translateY(6px); transition: opacity .5s var(--ease), transform .5s var(--ease); pointer-events: none; }
+.sb-msg.is-active { opacity: 1; transform: none; pointer-events: auto; }
+.sb-msg svg { width: 16px; height: 16px; color: var(--sale); }
 .sb-count { color: var(--muted); white-space: nowrap; }
 .sb-count b, .st-count b { color: var(--sale-light); font-variant-numeric: tabular-nums; font-weight: 600; }
 .sb-link { display: inline-flex; align-items: center; gap: 6px; color: var(--gold); font-weight: 600; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; border-bottom: 1px solid var(--line-strong); padding-bottom: 2px; }
@@ -369,10 +373,22 @@ body.sale-live .cta-normal { display: none; }
 .st-title { font-family: var(--font-serif); font-size: 1.2rem; color: var(--text); }
 .st-price strong { font-family: var(--font-serif); font-size: 1.25rem; color: var(--gold-light); }
 .st-count { margin-left: auto; font-size: .78rem; color: var(--muted); }
-.st-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px 22px; }
+.st-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px 22px; }
 .st-list li { display: flex; align-items: flex-start; gap: 10px; font-size: .84rem; color: var(--muted); }
 .st-list li b { color: var(--text); }
 .st-list svg { color: var(--sale); margin-top: 2px; }
+
+/* Pos percuma untuk SEMUA koleksi */
+.hs-ship { display: flex; align-items: center; gap: 12px; margin: 0; padding: 13px 20px 14px; border-top: 1px dashed rgba(255,122,89,.5); background: rgba(255,122,89,.07); }
+.hs-ship svg { width: 24px; height: 24px; color: var(--sale); }
+.hs-ship b { display: block; font-size: .74rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--sale-light); }
+.hs-ship small { display: block; font-size: .72rem; color: var(--muted); }
+.ship-strip { display: flex; align-items: center; gap: 10px; margin: -12px 0 22px; padding: 10px 16px; border: 1px dashed rgba(255,122,89,.55); border-radius: 8px; background: rgba(255,122,89,.05); font-size: .84rem; color: var(--muted); }
+.ship-strip svg { color: var(--sale); }
+.ship-strip b { color: var(--sale-light); }
+.pc-ship { position: absolute; left: 12px; bottom: 12px; z-index: 1; display: none; align-items: center; gap: 5px; padding: 4px 10px 4px 8px; border: 1px solid var(--sale); border-radius: 999px; background: rgba(19,13,9,.85); color: var(--sale-light); font-size: .6rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.pc-ship svg { width: 13px; height: 13px; }
+body.sale-live .pc-ship { display: inline-flex; }
 
 /* 6. Tag pos percuma */
 .ship-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; border: 1px solid var(--sale); border-radius: 999px; color: var(--sale-light); font-size: .68rem; font-weight: 600; letter-spacing: .04em; }
@@ -385,7 +401,6 @@ body.sale-live .cta-normal { display: none; }
     .sale-bar { font-size: .72rem; }
     .sale-bar-inner { flex-wrap: wrap; gap: 4px 12px; padding-right: 40px; padding-left: 14px; justify-content: flex-start; }
     .sb-long { display: none; }
-    .sb-short { display: inline; }
     .sb-link span { display: none; }
     .hero-sale { max-width: none; }
     .st-list { grid-template-columns: 1fr; }

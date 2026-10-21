@@ -1,7 +1,7 @@
 ================================================================
   CITRALOKA WEBSITE
   Karya Tradisi, Sentuhan Masa Kini
-  Versi: v2.8.1  |  Dikemas kini: 21 Oktober 2026
+  Versi: v2.9  |  Dikemas kini: 21 Oktober 2026
 ================================================================
 
 Website katalog beg tangan anyaman buatan tangan CITRALOKA,
@@ -226,8 +226,17 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
     25 Okt 11:59pm      filter "Sale RM99" dipilih automatik
     26 Okt dan selepas  Semua elemen sale hilang sendiri
 
+  Mesej pos percuma: "Pos Percuma untuk SEMUA koleksi."
+    (EN: "Free Shipping on ALL collections")
+
   Elemen sale:
-    - Bar pengumuman paling atas (+ countdown, boleh ditutup)
+    - Bar pengumuman paling atas (+ countdown, boleh ditutup),
+      2 mesej bergilir setiap 4 saat:
+        1) Beg Mini RM115 -> RM99
+        2) Pos Percuma untuk SEMUA koleksi
+    - Tag "Pos Percuma" pada SEMUA kad produk (auto, 22-25 Okt)
+    - Jalur notis pos percuma bawah menu filter (semua filter)
+    - Jalur "+ Pos Percuma untuk SEMUA koleksi" di bawah kad sale hero
     - Kad sale dalam hero (gambar sale-beg-mini.webp)
     - Butang filter "Sale RM99" (paling depan)
     - Kotak terma sale (bila filter Sale dipilih)
@@ -274,6 +283,11 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
 ----------------------------------------------------------------
 11. LOG PERUBAHAN
 ----------------------------------------------------------------
+
+  v2.9  - Pos percuma jelas untuk SEMUA koleksi (bukan Beg Mini
+          sahaja): bar atas 2 mesej bergilir, tag Pos Percuma pada
+          semua 35 kad, jalur notis bawah menu filter, jalur pos
+          percuma terpisah dalam kad sale hero. Semua auto off.
 
   v2.8.1 - og:image, twitter:image, og:url & canonical guna URL penuh
           https://citraloka0222.github.io/citraloka-website/

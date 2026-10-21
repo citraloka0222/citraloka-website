@@ -184,6 +184,22 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('[data-countdown="short"]').forEach(el => { el.textContent = short; });
         document.querySelectorAll('[data-cd]').forEach(el => { el.textContent = pad({ d, h, m, s }[el.dataset.cd]); });
     };
+    // Tag "Pos Percuma" pada SEMUA kad produk (dipapar semasa sale sahaja)
+    const truck = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h11v10H2zM13 9h4l4 4v3h-8"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg>';
+    cards.forEach(card => {
+        const media = card.querySelector('.pc-media');
+        if (media && !media.querySelector('.pc-ship')) media.insertAdjacentHTML('beforeend', '<span class="pc-ship">' + truck + '<span class="ms">Pos Percuma</span><span class="en">Free Shipping</span></span>');
+    });
+    // Bar atas: mesej bergilir setiap 4 saat
+    const barMsgs = saleBar ? [...saleBar.querySelectorAll('.sb-msg')] : [];
+    let msgIdx = 0;
+    if (barMsgs.length > 1) setInterval(() => {
+        if (salePhase === 'off') return;
+        barMsgs[msgIdx].classList.remove('is-active');
+        msgIdx = (msgIdx + 1) % barMsgs.length;
+        barMsgs[msgIdx].classList.add('is-active');
+    }, 4000);
+
     applyPhase(getPhase(new Date()), true);
     tick();
     setInterval(tick, 1000);
