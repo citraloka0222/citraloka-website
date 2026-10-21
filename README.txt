@@ -1,7 +1,7 @@
 ================================================================
   CITRALOKA WEBSITE
   Karya Tradisi, Sentuhan Masa Kini
-  Versi: v2.8  |  Dikemas kini: 21 Oktober 2026
+  Versi: v2.8.1  |  Dikemas kini: 21 Oktober 2026
 ================================================================
 
 Website katalog beg tangan anyaman buatan tangan CITRALOKA,
@@ -244,13 +244,13 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
   Tukar tarikh: script.js, bahagian "SALE BEG MINI" (const SALE).
 
   PENTING selepas sale (26 Okt):
-    Dalam index.html <head>, tukar balik:
-      <meta property="og:image" content="images/sale-share.jpg">
-    kepada:
-      <meta property="og:image" content="images/cover-photo.jpg">
+    Dalam index.html <head>, cari "sale-share.jpg" (2 tempat:
+    og:image & twitter:image) dan tukar kepada "cover-photo.jpg":
+      https://citraloka0222.github.io/citraloka-website/images/cover-photo.jpg
     (Imej share link tak boleh tukar automatik.)
-    Untuk preview link WhatsApp/FB yang tepat, og:image sebaiknya
-    guna URL penuh website, cth: https://.../images/sale-share.jpg
+
+  Semak preview link: https://developers.facebook.com/tools/debug/
+    (tampal URL website, klik "Scrape Again" untuk refresh cache)
 
 ----------------------------------------------------------------
 10. CARA UJI / LANCAR
@@ -274,6 +274,9 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
 ----------------------------------------------------------------
 11. LOG PERUBAHAN
 ----------------------------------------------------------------
+
+  v2.8.1 - og:image, twitter:image, og:url & canonical guna URL penuh
+          https://citraloka0222.github.io/citraloka-website/
 
   v2.8  - Sale Beg Mini 22-25 Okt (RM99, asal RM115, pos percuma
           semua order): bar pengumuman, kad sale hero, filter Sale,
