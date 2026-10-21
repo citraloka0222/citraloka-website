@@ -20,13 +20,17 @@
     --radius: 10px;
     --radius-lg: 14px;
     --header-h: 76px;
+    --bar-h: 0px;
+    --sale-grad: linear-gradient(90deg, #f6e09c, #ff7a59, #d4af37, #ff7a59, #f6e09c);
+    --sale: #ff7a59;
+    --sale-light: #ffc2ad;
     --ease: cubic-bezier(.2, .7, .2, 1);
     --shadow-gold: 0 0 0 1px var(--line), 0 18px 40px -18px rgba(0, 0, 0, .8), 0 0 40px -20px rgba(212, 175, 55, .35);
 }
 
 /* ---------- Reset ---------- */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 8px); -webkit-text-size-adjust: 100%; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + var(--bar-h) + 8px); -webkit-text-size-adjust: 100%; }
 body { background: var(--bg); color: var(--text); font-family: var(--font-sans); font-size: 15px; line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
 img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; text-decoration: none; }
@@ -102,7 +106,7 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; line-height: 
 .lang-btn:hover { background: var(--gold); color: #000; }
 
 /* ---------- Header ---------- */
-.site-header { position: fixed; inset: 0 0 auto 0; z-index: 200; height: var(--header-h); display: flex; align-items: center; background: linear-gradient(180deg, rgba(11,9,7,.85), rgba(11,9,7,0)); transition: background .35s, box-shadow .35s, height .35s; }
+.site-header { position: fixed; inset: var(--bar-h) 0 auto 0; z-index: 200; height: var(--header-h); display: flex; align-items: center; background: linear-gradient(180deg, rgba(11,9,7,.85), rgba(11,9,7,0)); transition: background .35s, box-shadow .35s, height .35s; }
 .site-header.is-scrolled { background: rgba(11,9,7,.92); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); box-shadow: 0 1px 0 var(--line); --header-h: 66px; }
 .nav-container { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .header-logo { height: 42px; width: auto; object-fit: contain; }
@@ -122,7 +126,7 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; line-height: 
 .menu-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
 /* ---------- Hero ---------- */
-.hero-section { position: relative; min-height: 100vh; min-height: 100svh; display: flex; align-items: center; padding: calc(var(--header-h) + 60px) 0 70px; overflow: hidden; isolation: isolate; }
+.hero-section { position: relative; min-height: 100vh; min-height: 100svh; display: flex; align-items: center; padding: calc(var(--header-h) + var(--bar-h) + 60px) 0 70px; overflow: hidden; isolation: isolate; }
 .hero-ambient { position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: .6;
     background:
         radial-gradient(ellipse at 78% 45%, rgba(212,175,55,.16), transparent 55%),
@@ -165,9 +169,9 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; line-height: 
 
 /* ---------- Products ---------- */
 .products-section { background: var(--bg); }
-.filter-bar { position: sticky; top: 65px; z-index: 60; display: flex; flex-wrap: wrap; gap: 10px; margin: 0 -20px 30px; padding: 14px 20px; background: rgba(11,9,7,.94); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid transparent; transition: border-color .3s, box-shadow .3s; }
+.filter-bar { position: sticky; top: calc(65px + var(--bar-h)); z-index: 60; display: flex; flex-wrap: wrap; gap: 8px; margin: 0 -20px 30px; padding: 14px 20px; background: rgba(11,9,7,.94); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid transparent; transition: border-color .3s, box-shadow .3s; }
 .filter-bar.is-stuck { border-bottom-color: var(--line); box-shadow: 0 14px 30px -18px rgba(0,0,0,.9); }
-.chip { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border: 1px solid var(--line); border-radius: 999px; font-size: .74rem; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: var(--surface); transition: .3s; }
+.chip { display: inline-flex; align-items: center; gap: 6px; padding: 9px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: .7rem; font-weight: 500; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); background: var(--surface); transition: .3s; }
 .chip sup { font-size: .62rem; color: var(--muted-2); top: 0; letter-spacing: 0; }
 .chip:hover { border-color: var(--line-strong); color: var(--gold-light); }
 .chip.is-active { background: var(--gold-grad); color: #1a1408; border-color: transparent; font-weight: 600; }
@@ -278,6 +282,119 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; line-height: 
 .wa-float:hover { transform: scale(1.07); }
 .wa-float svg { width: 26px; height: 26px; }
 
+/* =========================================================
+   SALE BEG MINI (22–25 Okt 2026) — dikawal oleh script.js ikut tarikh
+   body.sale-teaser = 21 Okt (teaser) | body.sale-live = 22–25 Okt | body.sale-on = kedua-duanya
+   ========================================================= */
+[hidden].chip, [hidden].sale-bar, [hidden].hero-sale, [hidden].sale-terms { display: none !important; }
+body:not(.sale-teaser) .sale-teaser-only { display: none !important; }
+body:not(.sale-live) .sale-live-only { display: none !important; }
+body:not(.sale-on) .sale-on-only { display: none !important; }
+
+/* Outline sale yang menonjol: border gradient emas-coral bergerak + glow berdenyut */
+.sale-outline, body.sale-on .product-card[data-mini] {
+    border: 1.5px solid transparent;
+    background: linear-gradient(var(--surface), var(--surface)) padding-box, var(--sale-grad) border-box;
+    background-size: 100% 100%, 300% 100%;
+    animation: saleBorder 6s linear infinite, saleGlow 2.6s ease-in-out infinite;
+}
+@keyframes saleBorder { to { background-position: 0 0, 300% 0; } }
+@keyframes saleGlow {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(255,122,89,0), 0 18px 40px -22px rgba(0,0,0,.8); }
+    50% { box-shadow: 0 0 26px -4px rgba(255,122,89,.5), 0 18px 40px -22px rgba(0,0,0,.8); }
+}
+
+/* 1. Bar pengumuman */
+.sale-bar { position: fixed; inset: 0 0 auto 0; z-index: 210; background: #130d09; color: var(--gold-light); font-size: .78rem; letter-spacing: .04em; }
+.sale-bar::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: var(--sale-grad); background-size: 300% 100%; animation: saleBorder 6s linear infinite; }
+.sale-bar-inner { display: flex; align-items: center; justify-content: center; gap: 18px; min-height: 40px; padding-top: 6px; padding-bottom: 8px; }
+.sb-text { display: flex; align-items: center; gap: 10px; margin: 0; }
+.sb-text s { color: var(--muted-2); }
+.sb-text b { color: #fff; font-weight: 700; }
+.sb-pill { padding: 2px 9px; border: 1px solid var(--sale); border-radius: 999px; color: var(--sale-light); font-size: .64rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; }
+.sb-short { display: none; }
+.sb-count { color: var(--muted); white-space: nowrap; }
+.sb-count b, .st-count b { color: var(--sale-light); font-variant-numeric: tabular-nums; font-weight: 600; }
+.sb-link { display: inline-flex; align-items: center; gap: 6px; color: var(--gold); font-weight: 600; font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; border-bottom: 1px solid var(--line-strong); padding-bottom: 2px; }
+.sb-link svg { width: 14px; height: 14px; }
+.sb-close { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 28px; height: 28px; font-size: 1.2rem; line-height: 1; color: var(--muted); border-radius: 50%; }
+.sb-close:hover { color: #fff; background: rgba(255,255,255,.06); }
+
+/* 2. Kad sale dalam hero */
+body.sale-on .hero-content { display: grid; grid-template-columns: minmax(0, 1fr) 340px; align-items: center; gap: 48px; }
+.hero-sale { border-radius: var(--radius-lg); overflow: hidden; }
+.hs-media { position: relative; margin: 0; aspect-ratio: 1 / 1; background: #fff; }
+.hs-media img { width: 100%; height: 100%; object-fit: contain; }
+.hs-badge { position: absolute; top: 12px; right: 12px; padding: 5px 11px; border: 1.5px solid var(--sale); border-radius: 3px; background: rgba(19,13,9,.88); color: var(--sale-light); font-size: .64rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.hs-body { padding: 18px 20px 20px; }
+.hs-eyebrow { font-size: .66rem; letter-spacing: .26em; text-transform: uppercase; color: var(--sale-light); margin-bottom: 4px; }
+.hs-title { font-size: 1.7rem; margin-bottom: 4px; }
+.hs-price, .pc-price { display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px; }
+.hs-price s, .pc-price s, .st-price s { color: var(--muted-2); font-size: .95rem; }
+.hs-price strong { font-family: var(--font-serif); font-size: 2.3rem; line-height: 1.1; background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hs-save, .pc-save { padding: 2px 8px; border: 1px solid var(--sale); border-radius: 999px; color: var(--sale-light); font-size: .68rem; font-weight: 700; letter-spacing: .06em; }
+.hs-perk { display: flex; align-items: center; gap: 8px; margin: 8px 0 14px; font-size: .82rem; color: var(--text); }
+.hs-perk svg { color: var(--sale); }
+.hs-count-label { display: block; font-size: .64rem; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.cd { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-bottom: 16px; }
+.cd > span { display: flex; flex-direction: column; align-items: center; padding: 6px 0 5px; border: 1px solid var(--line); border-radius: 6px; background: rgba(0,0,0,.25); }
+.cd b { font-family: var(--font-serif); font-size: 1.3rem; line-height: 1.1; color: #fff; font-variant-numeric: tabular-nums; }
+.cd i { font-style: normal; font-size: .58rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.hs-actions { display: grid; gap: 8px; }
+.hs-actions .btn-primary, .hs-actions .btn-outline { width: 100%; padding: 12px 16px; }
+.hs-note { margin-top: 10px; font-size: .7rem; text-align: center; color: var(--muted); }
+
+/* 3. Butang filter Sale */
+.chip-sale { gap: 7px; color: var(--sale-light); border: 1.5px solid transparent; background: linear-gradient(var(--surface), var(--surface)) padding-box, var(--sale-grad) border-box; background-size: 100% 100%, 300% 100%; animation: saleBorder 6s linear infinite; font-weight: 600; }
+.chip-sale svg { width: 14px; height: 14px; }
+.chip-sale.is-active { background: linear-gradient(90deg, #ff9b7d, #f6c86a) padding-box, var(--sale-grad) border-box; color: #1a1006; }
+.chip-sale.is-active sup { color: #3b2410; }
+
+/* 4. Kad Beg Mini semasa sale */
+.pc-sale { position: absolute; top: 12px; right: 12px; z-index: 1; padding: 5px 10px; border: 1.5px solid var(--sale); border-radius: 3px; background: rgba(19,13,9,.85); color: var(--sale-light); font-size: .62rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.pc-price { margin: -4px 0 12px; }
+.pc-price strong { font-family: var(--font-serif); font-size: 1.5rem; line-height: 1.1; background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.pc-price-note { font-size: .7rem; color: var(--muted); }
+.pc-sale-note { margin: 0 -20px; padding: 9px 16px 11px; border-top: 1px dashed rgba(255,122,89,.35); font-size: .68rem; text-align: center; color: var(--sale-light); }
+.pc-sale, .pc-price, .pc-sale-note, .cta-sale { display: none; }
+body.sale-on .pc-sale { display: inline-block; }
+body.sale-on .pc-price { display: flex; }
+body.sale-on .pc-sale-note { display: block; }
+body.sale-live .cta-sale { display: inline; }
+body.sale-live .cta-normal { display: none; }
+
+/* 5. Kotak terma sale */
+.sale-terms { border-radius: var(--radius); padding: 18px 22px; margin: -8px 0 28px; }
+.st-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px; margin-bottom: 12px; }
+.st-title { font-family: var(--font-serif); font-size: 1.2rem; color: var(--text); }
+.st-price strong { font-family: var(--font-serif); font-size: 1.25rem; color: var(--gold-light); }
+.st-count { margin-left: auto; font-size: .78rem; color: var(--muted); }
+.st-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px 22px; }
+.st-list li { display: flex; align-items: flex-start; gap: 10px; font-size: .84rem; color: var(--muted); }
+.st-list li b { color: var(--text); }
+.st-list svg { color: var(--sale); margin-top: 2px; }
+
+/* 6. Tag pos percuma */
+.ship-tag { display: inline-block; margin-top: 6px; padding: 3px 10px; border: 1px solid var(--sale); border-radius: 999px; color: var(--sale-light); font-size: .68rem; font-weight: 600; letter-spacing: .04em; }
+
+@media (max-width: 1080px) {
+    body.sale-on .hero-content { grid-template-columns: 1fr; gap: 40px; }
+    .hero-sale { max-width: 420px; width: 100%; }
+}
+@media (max-width: 720px) {
+    .sale-bar { font-size: .72rem; }
+    .sale-bar-inner { flex-wrap: wrap; gap: 4px 12px; padding-right: 40px; padding-left: 14px; justify-content: flex-start; }
+    .sb-long { display: none; }
+    .sb-short { display: inline; }
+    .sb-link span { display: none; }
+    .hero-sale { max-width: none; }
+    .st-list { grid-template-columns: 1fr; }
+    .st-count { margin-left: 0; width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .sale-outline, body.sale-on .product-card[data-mini], .chip-sale, .sale-bar::after { animation: none !important; }
+}
+
 /* ---------- Reveal animation ---------- */
 .js .reveal { opacity: 0; transform: translateY(22px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
 .js .reveal.is-in { opacity: 1; transform: none; }
@@ -302,7 +419,7 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; line-height: 
     :root { --header-h: 66px; }
     .menu-toggle { display: inline-flex; }
     .nav-cta { display: none; }
-    .main-nav { position: fixed; inset: var(--header-h) 0 auto 0; flex-direction: column; align-items: stretch; gap: 0; padding: 10px 20px 26px; background: var(--bg); box-shadow: 0 20px 40px -10px rgba(0,0,0,.8); border-bottom: 1px solid var(--line); transform: translateY(-12px); opacity: 0; visibility: hidden; transition: .35s var(--ease); max-height: calc(100vh - var(--header-h)); overflow-y: auto; }
+    .main-nav { position: fixed; inset: var(--header-h) 0 auto 0; flex-direction: column; align-items: stretch; gap: 0; padding: 10px 20px 26px; background: var(--bg); box-shadow: 0 20px 40px -10px rgba(0,0,0,.8); border-bottom: 1px solid var(--line); transform: translateY(-12px); opacity: 0; visibility: hidden; transition: .35s var(--ease); max-height: calc(100vh - var(--header-h) - var(--bar-h)); overflow-y: auto; }
     .main-nav.is-open { transform: none; opacity: 1; visibility: visible; }
     .main-nav a { padding: 15px 0; font-size: .8rem; border-bottom: 1px solid rgba(212,175,55,.1); }
     .main-nav a:not(.btn-outline)::after { display: none; }
@@ -318,7 +435,7 @@ h1, h2, h3, h4 { font-family: var(--font-serif); font-weight: 600; line-height: 
     .ornament { gap: 14px; }
     .ornament::before, .ornament::after { max-width: 48px; }
 
-    .hero-section { min-height: 100svh; padding: calc(var(--header-h) + 48px) 0 56px; }
+    .hero-section { min-height: 100svh; padding: calc(var(--header-h) + var(--bar-h) + 48px) 0 56px; }
     .hero-bg::after { background: linear-gradient(180deg, rgba(11,9,7,.72) 0%, rgba(11,9,7,.62) 45%, rgba(11,9,7,.85) 80%, var(--bg) 100%); }
     .hero-actions { flex-direction: column; align-items: stretch; margin-bottom: 40px; }
     .hero-stats { display: grid; grid-template-columns: repeat(3, 1fr); }

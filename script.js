@@ -74,7 +74,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // 'all' = semua, 'new' = Koleksi Baharu (data-new="true"), lain-lain = data-cat
-    const matches = (card, f) => f === 'all' || (f === 'new' ? card.dataset.new === 'true' : card.dataset.cat === f);
+    // 'sale' = Beg Mini (data-mini="true") semasa sale
+    const matches = (card, f) => f === 'all' || (f === 'new' ? card.dataset.new === 'true' : f === 'sale' ? card.dataset.mini === 'true' : card.dataset.cat === f);
     chips.forEach(chip => {
         const f = chip.dataset.filter;
         const n = cards.filter(c => matches(c, f)).length;
@@ -100,10 +101,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if (show) card.classList.add('is-in');
         });
         grid.scrollTo({ left: 0, behavior: 'smooth' });
+        if (saleTerms) saleTerms.hidden = !(f === 'sale' && salePhase !== 'off');
 
         // Bawa pengguna ke atas senarai produk bila filter ditukar (menu filter kekal melekat)
-        if (filterBar && grid.getBoundingClientRect().top < filterBar.offsetHeight + header.offsetHeight) {
-            const y = grid.getBoundingClientRect().top + window.scrollY - filterBar.offsetHeight - header.offsetHeight - 12;
+        const headBottom = header.getBoundingClientRect().bottom;
+        if (filterBar && grid.getBoundingClientRect().top < filterBar.offsetHeight + headBottom) {
+            const y = grid.getBoundingClientRect().top + window.scrollY - filterBar.offsetHeight - headBottom - 12;
             window.scrollTo({ top: y, behavior: 'smooth' });
         }
     }));
@@ -117,6 +120,90 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     onFilterStick();
     window.addEventListener('scroll', onFilterStick, { passive: true });
+
+    /* ---------- 5c. SALE BEG MINI (22–25 Okt 2026, waktu Malaysia) ----------
+       Teaser: 21 Okt | Sale: 22 Okt 12:00am – 25 Okt 11:59pm | Selepas itu hilang sendiri.
+       Pratonton: tambah ?sale=teaser, ?sale=live atau ?sale=off pada URL. */
+    const SALE = {
+        teaser: new Date('2026-10-21T00:00:00+08:00'),
+        start:  new Date('2026-10-22T00:00:00+08:00'),
+        end:    new Date('2026-10-26T00:00:00+08:00') // = tamat 25 Okt 11:59:59pm
+    };
+    const saleBar = document.getElementById('saleBar');
+    const heroSale = document.getElementById('heroSale');
+    const saleTerms = document.getElementById('saleTerms');
+    const saleChip = document.querySelector('.chip-sale');
+    const allChip = document.querySelector('.chip[data-filter="all"]');
+    const saleCtas = [...document.querySelectorAll('.pc-cta[data-sale-href]')];
+    saleCtas.forEach(a => { a.dataset.normalHref = a.getAttribute('href'); });
+    let forced = null;
+    try { forced = new URLSearchParams(location.search).get('sale'); } catch (e) {}
+    let barClosed = false;
+    try { barClosed = sessionStorage.getItem('citraloka-salebar') === 'closed'; } catch (e) {}
+    let salePhase = 'off';
+
+    const getPhase = (now) => {
+        if (['teaser', 'live', 'off'].includes(forced)) return forced;
+        if (now >= SALE.teaser && now < SALE.start) return 'teaser';
+        if (now >= SALE.start && now < SALE.end) return 'live';
+        return 'off';
+    };
+    const setBarH = () => {
+        const h = saleBar && !saleBar.hidden ? saleBar.offsetHeight : 0;
+        document.documentElement.style.setProperty('--bar-h', h + 'px');
+    };
+    const applyPhase = (phase, first) => {
+        const prev = salePhase;
+        salePhase = phase;
+        const on = phase !== 'off';
+        body.classList.toggle('sale-on', on);
+        body.classList.toggle('sale-teaser', phase === 'teaser');
+        body.classList.toggle('sale-live', phase === 'live');
+        if (saleBar) saleBar.hidden = !on || barClosed;
+        if (heroSale) heroSale.hidden = !on;
+        if (saleChip) saleChip.hidden = !on;
+        saleCtas.forEach(a => { a.href = phase === 'live' ? a.dataset.saleHref : a.dataset.normalHref; });
+        setBarH();
+        // Semasa sale: filter Sale dipilih automatik bila website dibuka
+        if (phase === 'live' && (first || prev !== 'live') && saleChip) saleChip.click();
+        // Sale tamat semasa website dibuka: kembali ke Semua
+        if (!on && saleChip && saleChip.classList.contains('is-active') && allChip) allChip.click();
+        if (saleTerms && !on) saleTerms.hidden = true;
+    };
+    const pad = n => String(n).padStart(2, '0');
+    const tick = () => {
+        const now = new Date();
+        const phase = getPhase(now);
+        if (phase !== salePhase) applyPhase(phase, false);
+        if (phase === 'off') return;
+        const target = phase === 'teaser' ? SALE.start : SALE.end;
+        const t = Math.max(0, Math.floor((target - now) / 1000));
+        const d = Math.floor(t / 86400), h = Math.floor(t % 86400 / 3600), m = Math.floor(t % 3600 / 60), s = t % 60;
+        const isEn = body.classList.contains('lang-en');
+        const short = (d ? d + (isEn ? 'd ' : 'h ') : '') + pad(h) + (isEn ? 'h ' : 'j ') + pad(m) + 'm ' + pad(s) + 's';
+        document.querySelectorAll('[data-countdown="short"]').forEach(el => { el.textContent = short; });
+        document.querySelectorAll('[data-cd]').forEach(el => { el.textContent = pad({ d, h, m, s }[el.dataset.cd]); });
+    };
+    applyPhase(getPhase(new Date()), true);
+    tick();
+    setInterval(tick, 1000);
+    window.addEventListener('resize', setBarH);
+    langBtn.addEventListener('click', () => { setBarH(); tick(); });
+
+    const closeBtn = document.getElementById('saleBarClose');
+    if (closeBtn) closeBtn.addEventListener('click', () => {
+        barClosed = true;
+        try { sessionStorage.setItem('citraloka-salebar', 'closed'); } catch (e) {}
+        saleBar.hidden = true;
+        setBarH();
+    });
+    // Butang "Lihat Beg Mini": pilih filter Sale & pergi ke koleksi
+    document.querySelectorAll('[data-sale-jump]').forEach(a => a.addEventListener('click', e => {
+        e.preventDefault();
+        if (saleChip && !saleChip.hidden && !saleChip.classList.contains('is-active')) saleChip.click();
+        const target = document.getElementById('koleksi');
+        if (target) target.scrollIntoView({ behavior: 'smooth' });
+    }));
 
     /* ---------- 6. Reveal on scroll ---------- */
     const reveals = document.querySelectorAll('.reveal');

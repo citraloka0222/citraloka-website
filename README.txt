@@ -1,7 +1,7 @@
 ================================================================
   CITRALOKA WEBSITE
   Karya Tradisi, Sentuhan Masa Kini
-  Versi: v2.7  |  Dikemas kini: 13 Oktober 2026
+  Versi: v2.8  |  Dikemas kini: 21 Oktober 2026
 ================================================================
 
 Website katalog beg tangan anyaman buatan tangan CITRALOKA,
@@ -48,6 +48,9 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
               pouch-rungus-yellow.webp, pouch-lundayeh-white.webp,
               pouch-rungus-coffee.webp, sumuni-mini-lilac.webp,
               sumuni-mini-dark-pink.webp
+  Sale 22-25 Okt:
+              sale-beg-mini.webp (kad sale hero, 600x745, 64 KB)
+              sale-share.jpg (imej share link, 1200x630, 79 KB)
 
   PENTING: Nama fail sensitif huruf besar/kecil & sambungan
   (.jpg / .png). Nama mesti sama tepat dengan dalam kod.
@@ -209,6 +212,47 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
 
 
 ----------------------------------------------------------------
+9A. SALE BEG MINI (22-25 OKTOBER 2026)
+----------------------------------------------------------------
+
+  Tawaran : Semua Beg Mini RM99 (asal RM115)
+            Pos percuma seluruh Malaysia untuk SEMUA order
+  Terma   : Stok terhad! First come, first served.
+            Tidak terima booking/lock tanpa deposit.
+
+  AUTOMATIK ikut tarikh (waktu Malaysia) — tak perlu ubah apa-apa:
+    21 Okt              Teaser "Bermula Esok" + countdown ke 22 Okt
+    22 Okt 12:00am  ->  Sale aktif: harga RM99, butang Order Sale,
+    25 Okt 11:59pm      filter "Sale RM99" dipilih automatik
+    26 Okt dan selepas  Semua elemen sale hilang sendiri
+
+  Elemen sale:
+    - Bar pengumuman paling atas (+ countdown, boleh ditutup)
+    - Kad sale dalam hero (gambar sale-beg-mini.webp)
+    - Butang filter "Sale RM99" (paling depan)
+    - Kotak terma sale (bila filter Sale dipilih)
+    - Kad Beg Mini: outline sale, badge SALE, harga RM115 -> RM99,
+      butang "Order Harga Sale RM99" (mesej WA auto), nota stok/deposit
+    - Kad Pos: "Percuma sepanjang sale (22-25 Okt)"
+  Gaya sale = outline/border gradient emas-coral yang bergerak.
+
+  Produk Beg Mini ditanda dengan  data-mini="true"  pada <article>.
+
+  Pratonton sebelum/selepas tarikh (tambah pada hujung URL):
+    ?sale=teaser   ?sale=live   ?sale=off
+
+  Tukar tarikh: script.js, bahagian "SALE BEG MINI" (const SALE).
+
+  PENTING selepas sale (26 Okt):
+    Dalam index.html <head>, tukar balik:
+      <meta property="og:image" content="images/sale-share.jpg">
+    kepada:
+      <meta property="og:image" content="images/cover-photo.jpg">
+    (Imej share link tak boleh tukar automatik.)
+    Untuk preview link WhatsApp/FB yang tepat, og:image sebaiknya
+    guna URL penuh website, cth: https://.../images/sale-share.jpg
+
+----------------------------------------------------------------
 10. CARA UJI / LANCAR
 ----------------------------------------------------------------
 
@@ -230,6 +274,13 @@ dwibahasa (BM / EN), pesanan melalui WhatsApp.
 ----------------------------------------------------------------
 11. LOG PERUBAHAN
 ----------------------------------------------------------------
+
+  v2.8  - Sale Beg Mini 22-25 Okt (RM99, asal RM115, pos percuma
+          semua order): bar pengumuman, kad sale hero, filter Sale,
+          kotak terma, harga & butang order sale pada kad Beg Mini,
+          tag pos percuma. Auto on/off ikut tarikh.
+        - Imej share link (og:image) = sale-share.jpg semasa sale.
+        - Butang filter dikecilkan sikit supaya muat satu baris.
 
   v2.7  - Koleksi Baharu: Sumuni (Mini) RGS02 Lilac (Rungus, hujung
           kumpulan Sumuni) & Sumuni (Mini) MRT01 Dark Pink.
