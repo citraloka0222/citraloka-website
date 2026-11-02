@@ -360,10 +360,7 @@ body.sale-on .hero-content { display: grid; grid-template-columns: minmax(0, 1fr
 .pc-price strong { font-family: var(--font-serif); font-size: 1.5rem; line-height: 1.1; background: var(--gold-grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .pc-price-note { font-size: .7rem; color: var(--muted); }
 .pc-sale-note { margin: 0 -20px; padding: 9px 16px 11px; border-top: 1px dashed rgba(255,122,89,.35); font-size: .68rem; text-align: center; color: var(--sale-light); }
-.pc-sale, .pc-price, .pc-sale-note, .cta-sale { display: none; }
-body.sale-on .pc-sale { display: inline-block; }
-body.sale-on .pc-price { display: flex; }
-body.sale-on .pc-sale-note { display: block; }
+.pc-price { display: flex; }
 body.sale-live .cta-sale { display: inline; }
 body.sale-live .cta-normal { display: none; }
 
@@ -498,4 +495,26 @@ body.sale-live .pc-ship { display: inline-flex; }
     .footer-grid, .footer-bottom { flex-direction: column; align-items: center; text-align: center; }
     .footer-nav { justify-content: center; gap: 18px; }
     .wa-float { right: 16px; bottom: 16px; }
+}
+
+/* ================= TERMA & SYARAT TEMPAHAN ================= */
+.order-terms {
+    margin-top: 2.5rem;
+    padding: clamp(1.25rem, 3vw, 2rem);
+    border: 1px solid rgba(212, 175, 55, 0.25);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.02);
+}
+.terms-list {
+    list-style: decimal outside;
+    margin: 1rem 0 0;
+    padding-left: 1.25rem;
+    display: grid;
+    gap: 0.75rem;
+    line-height: 1.6;
+}
+.terms-list li { display: list-item; }
+.terms-list li::marker {
+    color: var(--gold, #d4af37);
+    font-weight: 600;
 }

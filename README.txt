@@ -1,13 +1,29 @@
 ================================================================
   CITRALOKA WEBSITE
   Karya Tradisi, Sentuhan Masa Kini
-  Versi: v2.9  |  Dikemas kini: 21 Oktober 2026
+  Versi: v3.1  |  Dikemas kini: 2 November 2026
 ================================================================
 
 Website katalog beg tangan anyaman buatan tangan CITRALOKA,
 Kota Marudu, Sabah. Website satu halaman (single page),
 dwibahasa (BM / EN), pesanan melalui WhatsApp.
 
+
+
+RINGKASAN PERUBAHAN v3.0 & v3.1 (2 Nov 2026)
+-------------------------------------
+- Semua elemen sale dibuang (bar atas, kad hero sale, kotak terma sale,
+  chip Sale, label Sale, harga sale, CTA sale, notis pos percuma sale).
+- Harga tetap dipapar pada setiap kad produk:
+    Beg Standard : ikut senarai client (RM124 - RM167)
+    Beg Mini     : Nginolitan RM105, Sumuni RM100
+    Wristlet     : Orikos RM55, Vinasi RM50
+- Seksyen baharu "Terma & Syarat Tempahan" (BM & EN) selepas
+  Kaedah Penghantaran, sebelum Tentang Kami.
+- Ejaan: "berkerja" -> "bekerja"; kod KDZ02 seragam.
+- v3.1: og:image & twitter:image guna cover-photo.jpg (bukan sale-share.jpg).
+- Fail sale (script.js seksyen 5c) dibuang. Jika mahu sale semula,
+  rujuk v2.9.
 
 ----------------------------------------------------------------
 1. STRUKTUR FAIL
