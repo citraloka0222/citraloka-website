@@ -1,7 +1,7 @@
 ================================================================
   CITRALOKA WEBSITE
   Karya Tradisi, Sentuhan Masa Kini
-  Versi: v3.2  |  Dikemas kini: 3 November 2026
+  Versi: v3.3  |  Dikemas kini: 4 November 2026
 ================================================================
 
 Website katalog beg tangan anyaman buatan tangan CITRALOKA,
@@ -21,6 +21,9 @@ RINGKASAN PERUBAHAN v3.0 & v3.1 (2 Nov 2026)
 - Seksyen baharu "Terma & Syarat Tempahan" (BM & EN) selepas
   Kaedah Penghantaran, sebelum Tentang Kami.
 - Ejaan: "berkerja" -> "bekerja"; kod KDZ02 seragam.
+- v3.3 (4 Nov): Affiliate ref manual. URL ?ref=amirah atau ?ref=brendan disimpan dalam localStorage (citraloka-ref).
+  Butang kad produk (.pc-cta) & [data-wa-ref] auto-tukar nombor WA & tambah "(Refer: Nama)".
+  Nombor: owner Amirah 60192595039 | agent Brendan 601160861317. Tambah/ubah rekod di REFS dalam script.js seksyen 5d.
 - v3.2 (3 Nov): Terma & Syarat dipindah ke seksyen sendiri selepas "Kenapa Pilih Produk Ini".
   Butang kad produk: "WhatsApp untuk Tempahan" / "WhatsApp to Order" (WhatsApp dibuka tanpa mesej pra-isi).
   Wristlet: Vinasi RM55, Orikos RM50. Saiz Beg Mini baharu: P:18cm x L:9cm x T:18cm.

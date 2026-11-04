@@ -119,6 +119,37 @@ document.addEventListener('DOMContentLoaded', () => {
     onFilterStick();
     window.addEventListener('scroll', onFilterStick, { passive: true });
 
+    /* ---------- 5d. Affiliate ref tracking (manual) ----------
+       Contoh: https://citraloka0222.github.io/citraloka-website/?ref=brendan
+       Ref disimpan dalam localStorage; butang WhatsApp dikemas kini secara dinamik. */
+    const REF_KEY = 'citraloka-ref';
+    const OWNER_WA = '60192595039';                     // nombor sedia ada (Amirah / owner)
+    const REFS = {
+        amirah:  { name: 'Amirah',  wa: '60192595039' },  // owner
+        brendan: { name: 'Brendan', wa: '601160861317' }  // agent
+    };
+    const BASE_MSG = '';                                // mesej asal (kosong = hanya suffix ref)
+    const normRef = v => String(v || '').trim().toLowerCase();
+    let refCode = null;
+    try {
+        const fromUrl = normRef(new URLSearchParams(location.search).get('ref'));
+        if (REFS[fromUrl]) {
+            refCode = fromUrl;
+            localStorage.setItem(REF_KEY, fromUrl);     // kekal walaupun user tukar halaman
+        } else {
+            const saved = normRef(localStorage.getItem(REF_KEY));
+            if (REFS[saved]) refCode = saved;
+        }
+    } catch (e) {}
+    const refInfo = refCode ? REFS[refCode] : null;
+    document.querySelectorAll('.pc-cta, [data-wa-ref]').forEach(a => {
+        const parts = [BASE_MSG];
+        if (refInfo) parts.push('(Refer: ' + refInfo.name + ')');
+        const msg = parts.filter(Boolean).join(' ');
+        const number = refInfo ? refInfo.wa : OWNER_WA;
+        a.href = 'https://wa.me/' + number + (msg ? '?text=' + encodeURIComponent(msg) : '');
+    });
+
     /* ---------- 6. Reveal on scroll ---------- */
     const reveals = document.querySelectorAll('.reveal');
     if ('IntersectionObserver' in window) {
