@@ -121,7 +121,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* ---------- 5d. Affiliate ref tracking (manual) ----------
        Contoh: https://citraloka0222.github.io/citraloka-website/?ref=brendan
-       Ref disimpan dalam localStorage; butang WhatsApp dikemas kini secara dinamik. */
+       Ref disimpan dalam localStorage; butang WhatsApp dikemas kini secara dinamik.
+       ?ref=clear = padam ref yang disimpan (kembali ke owner). */
     const REF_KEY = 'citraloka-ref';
     const OWNER_WA = '60192595039';                     // nombor sedia ada (Amirah / owner)
     const REFS = {
@@ -133,7 +134,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let refCode = null;
     try {
         const fromUrl = normRef(new URLSearchParams(location.search).get('ref'));
-        if (REFS[fromUrl]) {
+        if (fromUrl === 'clear') {
+            localStorage.removeItem(REF_KEY);           // reset: kembali ke nombor owner
+        } else if (REFS[fromUrl]) {
             refCode = fromUrl;
             localStorage.setItem(REF_KEY, fromUrl);     // kekal walaupun user tukar halaman
         } else {
