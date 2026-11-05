@@ -1,7 +1,7 @@
 ================================================================
   CITRALOKA WEBSITE
   Karya Tradisi, Sentuhan Masa Kini
-  Versi: v3.6  |  Dikemas kini: 4 November 2026
+  Versi: v3.7  |  Dikemas kini: 4 November 2026
 ================================================================
 
 Website katalog beg tangan anyaman buatan tangan CITRALOKA,
@@ -21,6 +21,7 @@ RINGKASAN PERUBAHAN v3.0 & v3.1 (2 Nov 2026)
 - Seksyen baharu "Terma & Syarat Tempahan" (BM & EN) selepas
   Kaedah Penghantaran, sebelum Tentang Kami.
 - Ejaan: "berkerja" -> "bekerja"; kod KDZ02 seragam.
+- v3.7 (5 Nov): Harga RM pada kad produk DITUTUP (dibuang). Butang kekal "WhatsApp untuk Tempahan". Untuk papar semula, tambah <p class="pc-price"><strong>RMxx</strong></p> dalam setiap kad.
 - v3.6 (4 Nov): Halaman /brendan/ guna laluan mutlak /citraloka-website/?ref=brendan (sebelum ni ../ rosak bila URL tanpa / di hujung).
 - v3.5 (4 Nov): Halaman khas agent /brendan/ (redirect ke ?ref=brendan). Share link: .../citraloka-website/brendan/
 - v3.4 (4 Nov): ?ref=clear padam ref tersimpan (kembali ke nombor owner).
